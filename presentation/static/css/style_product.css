@@ -1,0 +1,237 @@
+@import url("../css/font.css");
+/* Logo */
+nav div img{
+  height: 50px;
+}
+
+/* Variable globales */
+:root{
+  --sky: linear-gradient(120deg, #095f7f 0%, #10b8f7 100%);
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic" cursive;
+}
+
+/* Police générale des éléments de navigation */
+.blue .produit, .nav > a, .dropdown a{
+  position: relative;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: var(--Abel);
+}
+/* Police du nom de l'entreprise */
+nav div a.navbar-brand{
+  font-size: 1.1em;
+  font-family: var(--Livvic);
+  margin-top: 7px;
+  }
+/* Couleur des textes de la navigation */
+.blue .produit a{
+  color: var(--white);
+}
+
+/* barre de Navigation */
+.blue{
+  background: var(--sky);
+  padding-top: 5px;
+}
+/* thème de Produit actif de la barre de navigation dans un fond blanc */
+.blue .active, #navbar{
+  background-color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.blue .active a, .nav > a, .dropdown a{
+  color: #0271AE;
+}
+.nav .nav-items .nav-link a{
+  color: white;
+}
+/* Pour créer une marge bleue au dessus du produit actif */
+.produit{
+  padding: 10px;
+}
+
+/* Grand titre du produit*/
+.card-header{
+  background: var(--sky);
+}
+.card-header h2 button{
+  color: white;
+  font-size: 0.8em;
+  font-family: var(--Lexend);
+}
+.card-header h2 button.collapsed, .card-header h2 button:not(.collapsed){
+  color: white;
+  text-decoration: none;
+}
+
+/* Background pour chaque produit */
+.photogrammetrie{
+  background: url(../Images/Services/Photogrammétrie.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.topographie{
+  background: url(../Images/Services/Topographie.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bathymetrie{
+  background: url(../Images/Services/Bathymétrie.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sig{
+  background: url(../Images/Services/SIG.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.lidar{
+  background: url(../Images/Services/Lidar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.photogrammetrie h3, .bathymetrie h3, .lidar h3{
+  position: relative;
+  width: 400px;
+  margin-left: 150px;
+  top: 250px;
+  color: white;
+}
+.topographie h3, .sig h3{
+  position: relative;
+  width: 400px;
+  margin-right: 150px;
+  top: 250px;
+  color: white;
+}
+
+/* Gamme de produit */
+.collapse .card-body .card div p{
+  font-size: 1.5em;
+  font-family: var(--Abel);
+}
+.collapse .card-body .card img{
+  min-height : 100px;
+}
+
+/* Version PC */
+@media (min-width: 768px){
+/* Retirer les produits */
+#navbar{
+    display:none;
+  }
+/* Pour éviter le chevauchement entre les images et les titres des projets */
+section div div div .card .card-img{
+  padding-bottom: 5px;
+}
+/* A propos */
+section div div.about {
+    background: var(--sky);
+  }
+section div .team {
+    background: url(../Images/Equipes.jpg);
+    background-size: cover;
+  }
+section div div.about div p {
+    color: white;
+  }
+}
+
+/* Version Tablette */
+@media (max-width: 767.98px){
+/* Texte d'intro */
+.blue .produit{
+    display:none;
+  }
+.blue .produit{
+  position: relative;
+  font-weight: bold;
+  font-size: 0.8em;
+  font-family: var(--Abel);
+  }
+/* Background intro */
+.photogrammetrie h3, .bathymetrie h3, .lidar h3{
+  position: relative;
+  width: 200px;
+  margin-left: 35px;
+  top: 50px;
+  color: white;
+}
+.topographie h3, .sig h3{
+  position: relative;
+  width: 200px;
+  margin-right: 35px;
+  top: 50px;
+  color: white;
+}
+/* Pour éviter le chevauchement entre les images et les titres des projets */
+section div div div .card .card-img{
+    padding-bottom: 15px;
+  }
+/* A propos */
+section div div.about {
+    background-color: white;
+  }
+section div div.about div p {
+    color: black;
+  }
+}
+
+/* Version Tablette */
+@media (max-width: 767.98px){
+/*Titre du Produit */
+.card-header h2 button{
+  font-size: 0.7em;
+  }
+}
+
+/* Version mobile */
+@media (max-width: 575.98px){
+/* Edition du nom de l'entreprise */
+nav div a.navbar-brand{
+  font-size: 0.8rem;
+  font-family: var(--Livvic);
+  margin-top: 7px;
+  }
+/* Effacer le nom de l'entreprise */
+nav div a.navbar-brand{
+  display: none;
+}
+/* Changer la taille du texte d'intro */
+div h3{
+  font-size: 1.2em;
+  }
+/*Titre du Produit */
+.card-header h2 button{
+  font-size: 0.5em;
+  }
+/*Nom du Produit */
+.collapse .card-body .card div p{
+  font-size: 1.2em;
+  }
+}
+
+@media (max-width: 329.98px){
+/* Changer la taille du texte d'intro */
+div h3{
+  font-size: 1em;
+  }
+/*Titre du Produit */
+.card-header h2 button{
+  font-size: 0.4em;
+  font-weight: bold;
+  }
+/*Nom du Produit */
+.collapse .card-body .card div p{
+  font-size: 1em;
+  }
+/* Fiche technique */
+.collapse .card-body .card button span:first-child{
+  display: none;
+  }
+
+}

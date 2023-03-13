@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Load static css -->
+    <link rel="stylesheet" href="{% static "css/style_product.css" %}"/>
+    <link rel="icon" type="image/x-icon" href="{% static "Img1.jpg" %}">
+    <!-- load AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Latest compiled Bootsrtap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Alternative to Bootstrap 4 Glyphicons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Geospace Africa</title>
+  </head>
+  <body>
+    <nav class="nav navbar navbar-light">
+      <div class="d-flex flex-row">
+        <img src="{% static "Img1.jpg" %}" alt="First slide">
+        <a class="navbar-brand" href="">&nbsp;Geospace Africa</a>
+      </div>
+      <a href="{% url 'home' %}"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Retour à l'acceuil</a>
+    </nav>
+
+    <div class="navproduit blue d-flex justify-content-center">
+      <div class="produit  active">
+        <a href="{% url 'photogrammetrie' %}" style="pointer-events: none;">PHOTOGRAMMETRIE</a>
+      </div>
+      <div class="produit">
+        <a href="{% url 'topographie' %}">TOPOGRAPHIE</a>
+      </div>
+      <div class="produit">
+        <a href="{% url 'bathymetrie' %}">BATHYMETRIE</a>
+      </div>
+      <div class="produit">
+        <a href="{% url 'sig' %}">SIG/CARTOGRAPHIE</a>
+      </div>
+      <div class="produit">
+        <a href="{% url 'lidar' %}">LASERGRAMMETRIE</a>
+      </div>
+
+      <nav id="navbar" class="nav navbar navbar-light">
+        <ul class="nav nav-items nav-pills">
+          <div class="dropdown">
+            <a class="btn dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nos Produits
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="{% url 'photogrammetrie' %}">PHOTOGRAMMETRIE</a>
+              <a class="dropdown-item" href="{% url 'topographie' %}">TOPOGRAPHIE</a>
+              <a class="dropdown-item" href="{% url 'bathymetrie' %}">BATHYMETRIE</a>
+              <a class="dropdown-item" href="{% url 'sig' %}">SIG/CARTOGRAPHIE</a>
+              <a class="dropdown-item" href="{% url 'lidar' %}">LASERGRAMMETRIE</a>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="photogrammetrie" style="height: 600px;">
+      <h3>Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
+    </div>
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              DRONES
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Drones/eBee-Geo-top-1024x622-1.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">eBee Geo</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Drones/eBee-TAC-1024x622.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">eBee Ag drone for agriculture</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Drones/eBee-TAC-1024x622-1.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">eBee TAC tactical mapping drone</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Drones/eBee-TAC-drone-for-public-safety.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">eBee TAC Public Safety drone</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Drones/ebeeX-hero-image.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">eBee X mapping drone</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              CAMERAS
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Camera/Altum-PT_500px_1.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Album-PT</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Camera/RedEdge-P_700px_1.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">RedEdge-P</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Camera/Sensors-AeriaX.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Aeria X</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Camera/Sensors-DuetT.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Duet T</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Camera/Sensors-SODA3D.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">S.O.D.A. 3D</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              LOGICIELS
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card mx-auto my-4" style="width: 18rem;">
+            <img class="product-img-top" src="{% static "Images/Produit/photogrammetrie/Software/Measure-Ground-Control-Computer-Group_New.svg" %}" alt="Card image cap">
+            <div class="card-body mx-auto">
+              <p class="text-center my-auto card-text">Mesure Ground Control</p>
+            </div>
+            <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

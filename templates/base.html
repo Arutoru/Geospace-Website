@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+{% load static %}
+{% load leaflet_tags %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% leaflet_js %}
+    {% leaflet_css %}
+    <!-- Load static css -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link rel="icon" type="image/x-icon" href="{% static "Img1.jpg" %}">
+    <!-- load AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Latest compiled Bootsrtap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Alternative to Bootstrap 4 Glyphicons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Geospace Africa</title>
+  </head>
+  <body>
+    <nav id="navbar" class="nav navbar navbar-light">
+      <div class="d-flex flex-row">
+        <img src="{% static "Img1.jpg" %}" alt="First slide">
+        <a class="navbar-brand" href="">&nbsp;Geospace Africa</a>
+      </div>
+      <ul class="nav nav-items nav-pills">
+        <li class="nav-item nav-link">
+          <a href="#produits">Produits</a>
+        </li>
+        <li class="nav-item nav-link">
+          <a href="#Realisations">Réalisations</a>
+        </li>
+        <li class="nav-item nav-link">
+          <a href="#Partenaires">Partenaires</a>
+        </li>
+        <li class="nav-item nav-link">
+          <a href="#A propos">A propos</a>
+        </li>
+        <li class="nav-item nav-link">
+          <a href="#Contact">Contacts</a>
+        </li>
+        <div class="dropdown">
+          <a class="btn dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Nous découvrir
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#Produits">Produits</a>
+            <a class="dropdown-item" href="#Realisations">Réalisations</a>
+            <a class="dropdown-item" href="#Partenaires">Partenaires</a>
+            <a class="dropdown-item" href="#A propos">A propos</a>
+            <a class="dropdown-item" href="#Contact">Contacts</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <section>
+
+      <div data-spy="scroll" data-target="#navbar" data-offset="0">
+
+        <!-- Produits -->
+        <div class="blue">
+          <div class="title">
+            <h2 class="text-center" style="color: white;" id="Produits">PRODUITS</h2>
+            <hr style="border-width: 2px; margin-bottom: 0px;">
+          </div>
+          <!-- Background Carousel -->
+          <div class="carousel slide" data-ride="carousel" data-aos="fade-in">
+            <div class="carousel-inner">
+              <div class="carousel-item one active"></div>
+              <div class="carousel-item two"></div>
+              <div class="carousel-item three"></div>
+              <div class="carousel-item four"></div>
+              <div class="carousel-item five"></div>
+            </div>
+
+            <!-- Produits 1 -->
+            <div class="col-md-3 mx-auto my-4 ml-4 d-flex flex-row" style="max-width: 800px;" data-aos="fade-left" data-aos-offset="100" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+              <div class="product-text container">
+                <h5 class="mx-auto" style="max-width: 200px; color: white;">PHOTOGRAMMETRIE</h5>
+                <p class="text-justify" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'photogrammetrie' %}" class="float-right" style="color: white;">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+              <img class="product-img" src="{% static "Images/Services/Photogrammétrie.jpg" %}" alt="Card image cap">
+            </div>
+            <!-- Produits 2 -->
+            <div class="col-md-3 mx-auto my-4 ml-4 d-flex flex-row" style="max-width: 800px;" data-aos="fade-right" data-aos-offset="100" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+              <img class="product-img" src="{% static "Images/Services/Topographie.jpg" %}" alt="Card image cap">
+              <div class="product-text container">
+                <h5 class="mx-auto" style="max-width: 200px; color: white;">TOPOGRAPHIE</h5>
+                <p class="text-justify" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'topographie' %}" class="float-right" style="color: white;">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Produits 3 -->
+            <div class="col-md-3 mx-auto my-4 ml-4 d-flex flex-row" style="max-width: 800px;" data-aos="fade-left" data-aos-offset="100" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+              <div class="product-text container">
+                <h5 class="mx-auto" style="max-width: 200px; color: white;">BATHYMETRIE</h5>
+                <p class="text-justify" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'bathymetrie' %}" class="float-right" style="color: white;">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+              <img class="product-img" src="{% static "Images/Services/Bathymétrie.jpg" %}" alt="Card image cap">
+            </div>
+            <!-- Produits 4 -->
+            <div class="col-md-3 mx-auto my-4 ml-4 d-flex flex-row" style="max-width: 800px;" data-aos="fade-right" data-aos-offset="100" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+              <img class="product-img" src="{% static "Images/Services/SIG.jpg" %}" alt="Card image cap">
+              <div class="product-text container">
+                <h5 class="mx-auto" style="max-width: 200px; color: white;">SIG/CARTOGRAPHIE</h5>
+                <p class="text-justify" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'sig' %}" class="float-right" style="color: white;">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Produits 5 -->
+            <div class="col-md-3 mx-auto my-4 ml-4 d-flex flex-row" style="max-width: 800px;" data-aos="fade-left" data-aos-offset="100" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+              <div class="product-text container">
+                <h5 class="mx-auto" style="max-width: 200px; color: white;">LASERGRAMMETRIE</h5>
+                <p class="text-justify" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'lidar' %}" class="float-right" style="color: white;">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+              <img class="product-img" src="{% static "Images/Services/Lidar.jpg" %}" alt="Card image cap">
+            </div>
+            <br>
+          </div>
+
+
+        </div>
+
+        <!-- Réalisations -->
+        <div class="blue">
+          <div class="title">
+            <h2 class="text-center" style="color: white;" id="Realisations">REALISATIONS</h2>
+            <hr style="border-width: 2px;">
+          </div>
+
+          <div class="d-flex flex-column flex-md-row flex-md-wrap container">
+
+            <!-- Info sur le projet 1-->
+            <div class="card col-md-4 col-lg-3 mx-auto my-4 ml-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true">
+              <div class="card-img"  data-toggle="modal" data-target="#Modal1">
+                <img class="card-img-top" src="{% static "ImgPro1.jpg" %}" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                <h7 class="card-text">Date de démarrage : </h7><br>
+                <h7 class="card-text">Durée : </h7><br>
+                <a href="#" class="float-right" data-toggle="modal" data-target="#Modal1">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Détails sur le projet 1-->
+            <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="exampleModalLabel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Info sur le projet 2-->
+            <div class="card col-md-4 col-lg-3 mx-auto my-4 ml-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true">
+              <div class="card-img" data-toggle="modal" data-target="#Modal2">
+                <img class="card-img-top" src="{% static "ImgPro2.jpg" %}" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                <h7 class="card-text">Date de démarrage : </h7><br>
+                <h7 class="card-text">Durée : </h7><br>
+                <a href="#" class="float-right" data-toggle="modal" data-target="#Modal2">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Détails sur le projet 2-->
+            <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="ModalLabel2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Info sur le projet 3-->
+            <div class="card col-md-4 col-lg-3 mx-auto my-4 ml-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true">
+              <div class="card-img"  data-toggle="modal" data-target="#Modal3">
+                <img class="card-img-top" src="{% static "ImgPro3.jpg" %}" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                <h7 class="card-text">Date de démarrage : </h7><br>
+                <h7 class="card-text">Durée : </h7><br>
+                <a href="#" class="float-right" data-toggle="modal" data-target="#Modal3">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Détails sur le projet 3-->
+            <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="ModalLabel3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Info sur le projet 4-->
+            <div class="card col-md-4 col-lg-3 mx-auto my-4 ml-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true">
+              <div class="card-img" data-toggle="modal" data-target="#Modal4">
+                <img class="card-img-top" src="{% static "ImgPro1.jpg" %}" alt="Card image cap">
+              </div>
+              <div class="card-body" data-toggle="modal" data-target="#Modal4">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                <h7 class="card-text">Date de démarrage : </h7><br>
+                <h7 class="card-text">Durée : </h7><br>
+                <a href="#" class="float-right" data-toggle="modal" data-target="#Modal4">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Détails sur le projet 4-->
+            <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="ModalLabel4" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="ModalLabel4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Info sur le projet 5-->
+            <div class="card col-md-4 col-lg-3 mx-auto my-4 ml-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true">
+              <div class="card-img" data-toggle="modal" data-target="#Modal5">
+                <img class="card-img-top" src="{% static "ImgPro2.jpg" %}" alt="Card image cap">
+              </div>
+              <div class="card-body" data-toggle="modal" data-target="#Modal5">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                <h7 class="card-text">Date de démarrage : </h7><br>
+                <h7 class="card-text">Durée : </h7><br>
+                <a href="#" class="float-right" data-toggle="modal" data-target="#Modal5">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Détails sur le projet 5-->
+            <div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="ModalLabel5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Info sur le projet 6-->
+            <div class="card col-md-4 col-lg-3 mx-auto my-4 ml-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true">
+              <div class="card-img" data-toggle="modal" data-target="#Modal6">
+                <img class="card-img-top" src="{% static "ImgPro3.jpg" %}" alt="Card image cap">
+              </div>
+              <div class="card-body" data-toggle="modal" data-target="#Modal6">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                <h7 class="card-text">Date de démarrage : </h7><br>
+                <h7 class="card-text">Durée : </h7><br>
+                <a href="#" class="float-right" data-toggle="modal" data-target="#Modal6">plus de détails &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Détails sur le projet 6-->
+            <div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="ModalLabel6" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="ModalLabel6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- <div class="white">
+          <h2 class="text-center" id="Personnel">Personnel</h2>
+          <hr style="border-width: 2px;">
+
+          <div class="d-flex flex-column flex-md-row flex-md-wrap-reverse container">
+            <div class="col-6 col-md-2 my-4 mx-auto d-flex flex-column" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true" style="min-width: 150px;">
+              <img class="rounded-circle"  src="{% static "ImgPro1.jpg" %}" alt="Card image cap">
+              <b>Eric Kepeden</b>
+              <h7>Fondateur et directeur général de Geospace Africa</h7>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="white">
+          <div class="title">
+            <h2 class="text-center" id="Partenaires">PARTENAIRES</h2>
+            <hr style="border-width: 2px;">
+          </div>
+
+          <div class="d-flex flex-column flex-md-row flex-md-wrap container">
+            <!-- Partenaire 1 -->
+            <div class="col-lg-6 d-flex flex-column flex-md-row"  data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true" style="max-width: 600px;">
+              <!-- Photo 1 -->
+              <div class="d-flex flex-column container" style="max-width: 150px;">
+                <img class=""  src="{% static "Images/Partenaires/CHC.jpg" %}" alt="Card image cap">
+              </div>
+              <!-- Contenu 1 -->
+              <div class="container">
+                <p class="text-justify">Fondée en 2003, CHC Navigation crée des solutions innovantes de navigation et de positionnement GNSS pour rendre le travail des clients plus efficace. Les produits et solutions CHCNAV couvrent de multiples industries telles que la géospatiale, la construction, l’agriculture et la marine. Avec une présence à travers le monde, des distributeurs dans plus de 120 pays et plus de 1 500 employés, CHC Navigation est aujourd’hui reconnue comme l’une des entreprises à la croissance la plus rapide dans les technologies géomatiques.</p>
+              </div>
+            </div>
+
+            <!-- Partenaire 2 -->
+            <div class="col-lg-6 d-flex flex-column flex-md-row"  data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true" style="max-width: 600px;">
+              <!-- Photo 2 -->
+              <div class="d-flex flex-column container" style="max-width: 150px;">
+                <img class=""  src="{% static "Images/Partenaires/Leica.jpg" %}" alt="Card image cap">
+              </div>
+              <!-- Contenu 2 -->
+              <div class="container">
+                <p class="text-justify">Leica Geosystems (anciennement Wild Heerbrugg ou simplement Wild) basée en Suisse orientale fabrique des produits et des systèmes d’arpentage et de mesure géographique (géomatique). Ses produits utilisent une variété de technologies, y compris la navigation par satellite GPS et les télémètres laser pour permettre aux utilisateurs de modéliser des structures existantes, des terrains dans des systèmes informatiques avec une précision élevée, souvent inférieure à 1 cm.</p>
+              </div>
+            </div>
+
+            <!-- Partenaire 3 -->
+            <div class="col-lg-6 d-flex flex-column flex-md-row"  data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true"  style="max-width: 600px;">
+              <!-- Photo 3 -->
+              <div class="d-flex flex-column container" style="max-width: 150px;">
+                <img class=""  src="{% static "Images/Partenaires/Sensefly.jpg" %}" alt="Card image cap">
+              </div>
+              <!-- Contenu 3-->
+              <div class="container">
+                <p class="text-justify">Fondée en 2009, senseFly développe et produit une gamme exclusive de drones à voilure fixe haute performance de marque eBee pour un usage professionnel. Sûrs, ultralégers et faciles à utiliser, ces drones autonomes sont utilisés par des milliers de clients à travers le monde dans les secteurs de l’agriculture, du gouvernement, de l’ingénierie et de la construction, entre autres secteurs verticaux, pour collecter des renseignements exploitables sur les données aériennes.</p>
+              </div>
+            </div>
+
+            <!-- Partenaire 4 -->
+            <div class="col-lg-6 d-flex flex-column flex-md-row"  data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" data-aos-once="true" style="max-width: 600px;">
+              <!-- Photo 4 -->
+              <div class="d-flex flex-column container" style="max-width: 150px;">
+                <img class=""  src="{% static "Images/Partenaires/Supermap.jpg" %}" alt="Card image cap">
+              </div>
+              <!-- Contenu 4 -->
+              <div class="container">
+                <p class="text-justify">SuperMap SIG est développé par SuperMap Software Co., Ltd. Il s’agit d’un ensemble complet de logiciels de plate-forme SIG, comprenant des systèmes pour SIG PC ou Desktop, SIG pour des systèmes serveur, SIG Cloud et SIG mobile, ainsi que des outils de production, traitement et de gestion des données géospatiales. Ses avantages résident aussi bien dans la gamme variée d’outils de saisie et de traitement qu'il offre que dans la possibilité d'exporter des sorties cartographiques aux formats numériques modifiables par des logiciels d'affinement.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- A propos -->
+        <div class="team">
+          <div class="title blue">
+            <h2 class="text-center" style="color: white;" id="A propos">A PROPOS</h2>
+            <hr style="border-width: 2px;">
+          </div>
+
+          <div class="about pt-3 d-flex flex-row mx-auto" style="max-width: 800px;">
+            <!-- Photo -->
+            <!-- <div class="d-flex flex-column container" style="max-width: 150px;">
+              <img class=""  src="{% static "Img1.jpg" %}" alt="Card image cap">
+              <b style="color: white;">Eric Kepeden</b>
+              <h7 style="color: white;">Fondateur et directeur général de Geospace Africa</h7>
+            </div> -->
+            <!-- Contenu -->
+            <div class="container">
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="space" style="height: 300px;">
+          </div>
+        </div>
+
+        <div class="blue">
+          <div class="title">
+            <h2 class="text-center" style="color: white;" id="Contact">CONTACTS</h2>
+            <hr style="border-width: 2px;">
+          </div>
+
+          <div class="d-flex flex-column flex-md-row justify-content-center">
+            <div class="col-md-7 container" id="map" style="max-width: 600px;">
+              <h4 class="text-center" style="color: white;">Localisation</h4>
+              {% leaflet_map "detailmap" callback="window.map_init"%}
+            </div>
+            <div class="col-md-5 mt-5 d-flex flex-column justify-content-between">
+              <h5 style="color: white;">Adresse: </h5>
+              <h5 style="color: white;">B.P. 4474 Douala – Cameroun</h5>
+              <h5 style="color: white;">E-mail: geospaceafrica2012@gmail.com</h5>
+              <h5 style="color: white;">Tél: +237 670 28 01 01 / 655 97 37 67</h5>
+              <div class="d-flex flex-row">
+                <h5 style="color: white;">Suivez-nous sur: &nbsp;</h5>
+                <a class="mx-2" href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a class="mx-2" href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                <a class="mx-2" href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="col-md-4 col-xl-3 d-flex flex-wrap justify-content-center justify-content-md-start">
+          <a class="btn btn-link" href="#Produits">Produits</a>
+          <a class="btn btn-link" href="#Réalisations">Réalisations</a>
+          <a class="btn btn-link" href="#Partenaires">Partenaires</a>
+          <a class="btn btn-link" href="#Apropos">A propos</a>
+          <a class="btn btn-link" href="#Contact">Contacts</a>
+        </div>
+        <div class="col-md-8 col-xl-9">
+          <h4 class="text-center">Ils nous font confiance</h4>
+          <div class="my-2 d-flex flex-wrap justify-content-around">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+
+    window.addEventListener("map:init", function (event){
+      var map = event.detail.map;
+      L.marker([4.055745,9.698625]).addTo(map)
+        .bindPopup('Adresse de Geospace');
+    });
+
+    $('.carousel').carousel({
+      interval: 4000
+    })
+
+  </script>
