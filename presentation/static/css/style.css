@@ -100,7 +100,7 @@ section div div div div img.card-img-top:hover {
   transform: scale(1.2);
 }
 
-/* Version PC */
+/* Version PC only*/
 @media (min-width: 768px){
 /* Effacer le dropdown menu */
 .dropdown{
@@ -153,7 +153,7 @@ footer h4{
   }
 }
 
-/* Version mobile */
+/* Version mobile et mini-tablette */
 @media (max-width: 575.98px){
 /* Retirer les images des produits et le nom de l'entreprise */
 section div div div div img.product-img, nav div a.navbar-brand{

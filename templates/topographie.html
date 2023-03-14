@@ -17,6 +17,7 @@
     <title>Geospace Africa</title>
   </head>
   <body>
+    <!-- Logo -->
     <nav class="nav navbar navbar-light">
       <div class="d-flex flex-row">
         <img src="{% static "Img1.jpg" %}" alt="First slide">
@@ -24,7 +25,7 @@
       </div>
       <a href="{% url 'home' %}"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Retour à l'acceuil</a>
     </nav>
-
+    <!-- Navigation entre les thèmes de produits -->
     <div class="navproduit blue d-flex justify-content-center">
       <div class="produit">
         <a href="{% url 'photogrammetrie' %}">PHOTOGRAMMETRIE</a>
@@ -42,6 +43,7 @@
         <a href="{% url 'lidar' %}">LASERGRAMMETRIE</a>
       </div>
 
+      <!-- Navigation avec dropdown -->
       <nav id="navbar" class="nav navbar navbar-light">
         <ul class="nav nav-items nav-pills">
           <div class="dropdown">
@@ -60,14 +62,16 @@
       </nav>
     </div>
 
-
-
-    <div class="topographie" style="height: 600px;">
-      <h3 class="float-right">Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
+    <!-- Intro du thème -->
+    <div class="theme topographie" style="height: 600px;">
+      <h3>Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
     </div>
 
+    <!-- Liste des produits -->
     <div id="accordion">
+      <!-- Section 1 -->
       <div class="card">
+        <!-- Titre -->
         <div class="card-header" id="headingOne">
           <h2 class="text-center mb-0">
             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -75,42 +79,143 @@
             </button>
           </h2>
         </div>
-
+        <!-- Produits -->
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i90-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i90 IMU-RTK GNSS</p>
+                <small class="text-center my-auto card-text">High-performance IMU-RTK GNSS receiver</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i90-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i90 PRO IMU-RTK GNSS</p>
+                <small class="text-center my-auto card-text">Professional IMU-RTK GNSS receiver with L-Band</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i83-smart-versatile-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i83 IMU-RTK GNSS</p>
+                <small class="text-center my-auto card-text">Universal smart IMU-RTK GNSS receiver</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i73+-imu-rtk-uhf-base-rover-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i73+ IMU-RTK GNSS</p>
+                <small class="text-center my-auto card-text">Compact GNSS/IMU Base + Rover</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/Ibase-gnss-rtk-base-station-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">iBase GNSS</p>
+                <small class="text-center my-auto card-text">Rugged & cable-free GNSS base station</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i50-gnss-gps-glonass-galileo-beidou-qzss-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i50 GNSS</p>
+                <small class="text-center my-auto card-text">Cost-effective GNSS receiver</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
           </div>
+
         </div>
       </div>
+
+      <!-- Section 2 -->
       <div class="card">
+        <!-- Titre -->
         <div class="card-header" id="headingTwo">
           <h2 class="text-center mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              ANTENNES GNSS
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="text-center card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               SENSEURS GNSS
             </button>
           </h2>
         </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <!-- Produits -->
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/cgi-610-gnss-ins-sensor-chc-navigation.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CGI-610</p>
+                <small class="text-center my-auto card-text">GNSS+INS positionning and navigation sensor</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/P2-elite-gnss-sensor-dual-antenna-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P2 ELITE GNSS</p>
+                <small class="text-center my-auto card-text">Advanced sensor for positionning + heading</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/p2-gnss-sensor-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P2 PRO GNSS</p>
+                <small class="text-center my-auto card-text">Rugged positionning + heading sensor</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/p-2-pro-gnss-dual-antenna-sensor-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P2 GNSS</p>
+                <small class="text-center my-auto card-text">Robust and versatile positionningsensor</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/P5E.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P5 GNSS</p>
+                <small class="text-center my-auto card-text">Geodetic reference station for GNSS Network applications</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/p5-gnss-reference-station-624-channels-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P5E GNSS</p>
+                <small class="text-center my-auto card-text">Reference station for geodetic & scientific applications</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
           </div>
+
         </div>
       </div>
+
+      <!-- Section 3 -->
       <div class="card">
+        <!-- Titre -->
         <div class="card-header" id="headingThree">
           <h2 class="text-center mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -118,54 +223,177 @@
             </button>
           </h2>
         </div>
+        <!-- Produits -->
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Controllers_Tablets/lt-700-h-gnss-rtk-tablet-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">LT700H RTK Tablet</p>
+                <small class="text-center my-auto card-text">Rugged Android Tablet with cm GNSS positionning</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/Topographie/Controllers_Tablets/hce600-data-controller-surveying-mapping-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">HCE600</p>
+                <small class="text-center my-auto card-text">Rugged 5.5" HD+ Field data controller</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Controllers_Tablets/lt-700-gnss-forestry-field-survey-tablet-chc-navigation.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">LT700 Tablet</p>
+                <small class="text-center my-auto card-text">Professional Android Tablet for mobile workforce</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Section 4 -->
       <div class="card">
-        <div class="card-header" id="headingThree">
+        <!-- Titre -->
+        <div class="card-header" id="headingFour">
           <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              DATALINK
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              LOGICIELS
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               STATION TOTALE
             </button>
           </h2>
         </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <!-- Produits -->
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Station_Totale/total-station-cts-112-r4-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CTS-112R4</p>
+                <small class="text-center my-auto card-text">Total Station for construction and surveying</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Section 5 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingFive">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              LOGICIELS
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Software/landstar-8-surveying-mapping-app-chc-navigation.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">LandStar 8</p>
+                <small class="text-center my-auto card-text">Land Surveying and Mapping APP</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/cgo-2-post-processing-software-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CGO2 Postr processing Software</p>
+                <small class="text-center my-auto card-text">GNSS data post-processing software</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/Topographie/Software/CPS2.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CPS GNSS Network</p>
+                <small class="text-center my-auto card-text">GNSS RTK network management software</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Software/GNSSTool.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">GNSS Tool</p>
+                <small class="text-center my-auto card-text">GNSS and NMEA output App</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingSix">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              ANTENNES GNSS
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/GNSS_Antennas/1.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">C220GR2</p>
+                <small class="text-center my-auto card-text">Geodetic GNSS choke-ring antenna</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/GNSS_Antennas/3.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AT312</p>
+                <small class="text-center my-auto card-text">GNSS antenna for surveying</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingSeven">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              DATALINK
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+          <div class="card mx-auto my-4" style="width: 18rem;">
+            <img class="product-img-top" src="{% static "Images/Produit/Topographie/DataLink/DL8_product.png" %}" alt="Card image cap">
+            <div class="card-body mx-auto">
+              <p class="text-center my-auto card-text">DL8 Datalink</p>
+              <small class="text-center my-auto card-text">Rugged powerful reliable advanced datalink for GNSS application</small>
+            </div>
+            <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </body>
