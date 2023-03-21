@@ -100,7 +100,7 @@ nav div a.navbar-brand{
   text-shadow: 2px 2px 4px #000000;
   width: 400px;
   margin-left: 150px;
-  top: 150px;
+  top: 100px;
   color: white;
 }
 
@@ -170,6 +170,7 @@ section div div.about div p {
   width: 200px;
   margin-left: 35px;
   top: 50px;
+  font-size: 1.5em;
 }
 /* Pour éviter le chevauchement entre les images et les titres des projets */
 section div div div .card .card-img{
@@ -201,9 +202,15 @@ nav div a.navbar-brand{
   display: none;
 }
 /* Changer la taille du texte d'intro */
-div h3{
+.theme h3{
   font-size: 1.2em;
   }
+.lidar{
+  background: url(../Images/Services/LidarM.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+
+}
 /*Titre du Produit */
 .card-header h2 button{
   font-size: 0.5em;
@@ -232,5 +239,14 @@ div h3{
 /* Fiche technique */
 .collapse .card-body .card button span:first-child{
   display: none;
+  }
+/* Ajuster les images des produits */
+.collapse .card-body .card .decalmin{
+  position: relative;
+  left: 15px;
+  }
+.collapse .card-body .card .decalmax{
+  position: relative;
+  left: 30px;
   }
 }

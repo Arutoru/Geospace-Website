@@ -42,6 +42,7 @@
         <a href="{% url 'lidar' %}">LASERGRAMMETRIE</a>
       </div>
 
+      <!-- Navigation avec dropdown -->
       <nav id="navbar" class="nav navbar navbar-light">
         <ul class="nav nav-items nav-pills">
           <div class="dropdown">
@@ -61,41 +62,101 @@
 
     </div>
 
-
+    <!-- Intro du thème -->
     <div class="theme bathymetrie" style="height: 600px;">
       <h3>Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
     </div>
 
+    <!-- Liste des produits -->
     <div id="accordion">
+      <!-- Section 1 -->
       <div class="card">
+        <!-- Titre -->
         <div class="card-header" id="headingOne">
           <h2 class="text-center mb-0">
             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              SENSEURS HYDROGRAPHIQUES
-            </button>
-          </h2>
-        </div>
-
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               USV
             </button>
           </h2>
         </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="text-center card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <!-- produits -->
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/USV/usv-apache-6-chcnav-multibeam-bathymetric-hydrographic-survey.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Apache6 USV</p>
+                <small class="text-center my-auto card-text">USV with Norbit multibeam echosounder</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/USV/Apache-4-USV-single-beam-supports-ADCPs-CHCNAV.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Apache4 USV</p>
+                <small class="text-center my-auto card-text">USV with integrated ADCP and echosounder</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/USV/apache-3-usv-gnss-imu-single-bim-marine-drone-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Apache3 USV</p>
+                <small class="text-center my-auto card-text">Single beam marine drone</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Section 2 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingTwo">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              SENSEURS HYDROGRAPHIQUES
+            </button>
+          </h2>
+        </div>
+        <!-- produits -->
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Hydrographic_Sensors/Product_banner_D390.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">D390</p>
+                <small class="text-center my-auto card-text">Integrated single beam echo sounder system</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Hydrographic_Sensors/AUTO.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">HydroSurvey Software</p>
+                <small class="text-center my-auto card-text">Software for hydrographicdata collection, processing and export</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Hydrographic_Sensors/D230.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">D230</p>
+                <small class="text-center my-auto card-text">Single beam echo sounder for bathymetric survey</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </body>

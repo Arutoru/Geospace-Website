@@ -42,6 +42,7 @@
         <a href="{% url 'lidar' %}" style="pointer-events: none;">LASERGRAMMETRIE</a>
       </div>
 
+      <!-- Navigation avec dropdown -->
       <nav id="navbar" class="nav navbar navbar-light">
         <ul class="nav nav-items nav-pills">
           <div class="dropdown">
@@ -60,42 +61,125 @@
       </nav>
     </div>
 
-
+    <!-- Intro du thème -->
     <div class="theme lidar" style="height: 600px;">
       <h3>Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
     </div>
 
+    <!-- Liste des produits -->
     <div id="accordion">
+      <!-- Section 1 -->
       <div class="card">
+        <!-- Titre -->
         <div class="card-header" id="headingOne">
           <h2 class="text-center mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              PLATEFORMES UAV
+            </button>
+          </h2>
+        </div>
+
+        <!-- produits -->
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Lidar/UAV_platform/p330-pro-vtol-uav-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P330 PRO</p>
+                <small class="text-center my-auto card-text">VTOL drone for surveying and mapping</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Lidar/UAV_platform/BB4.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">BB4</p>
+                <small class="text-center my-auto card-text">Unmanned Air Vehicle (UAV) for airbone surveys </small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingTwo">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
               MOBILE MAPPERS
             </button>
           </h2>
         </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              PLATEFORMES UAV
-            </button>
-          </h2>
-        </div>
+        <!-- produits -->
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="text-center card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/Lidar/Mobile_Mappers/alphaair450-lidar-system-chc-navigation.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AlphaAir 450</p>
+                <small class="text-center my-auto card-text">Airbone LiDAR system with 3D Scanner, camera, IMU & GNSS</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AlphaAir-1400-laser-scanner-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AlphaAir 1400</p>
+                <small class="text-center my-auto card-text">Airbone reality capture LiDAR system with 1430m range</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AlphaAir-2400-laser-scanner-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AlphaAir 2400</p>
+                <small class="text-center my-auto card-text">Airbone reality capture LiDAR system with 2150m range</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Alpha-3d-laser-scanner-mapping-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Alpha3D</p>
+                <small class="text-center my-auto card-text">Advanced system: laser scanner, HDR camera, GNSS, inertial tech</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AU300_product.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AlphaAir 300</p>
+                <small class="text-center my-auto card-text">Accurate LiDAR with minVUX UAV family scanners onboard</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AU900_1300.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AlphaUni 900/1300</p>
+                <small class="text-center my-auto card-text">High-end, Long-range LiDAR solutions, multi-platform setup</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
           </div>
         </div>
       </div>
+
+
+      <!-- Section 3 -->
       <div class="card">
+        <!-- Titre -->
         <div class="card-header" id="headingThree">
           <h2 class="text-center mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -103,12 +187,23 @@
             </button>
           </h2>
         </div>
+
+        <!-- produits -->
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Software/copre-lidar-data-processing-software-chc-navigation.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CoPre LiDAR Processing Software</p>
+                <small class="text-center my-auto card-text">Processing of LiDAR scanner data</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
 
 

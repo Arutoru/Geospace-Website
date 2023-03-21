@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="{% static "css/style_product.css" %}"/>
     <link rel="icon" type="image/x-icon" href="{% static "Img1.jpg" %}">
     <!-- load AOS css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https:/unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Latest compiled Bootsrtap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Alternative to Bootstrap 4 Glyphicons -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https:/maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <title>Geospace Africa</title>
   </head>
@@ -42,6 +42,7 @@
         <a href="{% url 'lidar' %}">LASERGRAMMETRIE</a>
       </div>
 
+      <!-- Navigation avec dropdown -->
       <nav id="navbar" class="nav navbar navbar-light">
         <ul class="nav nav-items nav-pills">
           <div class="dropdown">
@@ -60,12 +61,16 @@
       </nav>
     </div>
 
+    <!-- Intro du thème -->
     <div class="theme sig" style="height: 600px;">
       <h3>Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
     </div>
 
+    <!-- Liste des produits -->
     <div id="accordion">
+      <!-- Section -->
       <div class="card">
+        <!-- Titre -->
         <div class="card-header" id="headingOne">
           <h2 class="text-center mb-0">
             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -74,18 +79,67 @@
           </h2>
         </div>
 
+        <!-- produits -->
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/SIG/Serveur_Cloud_SIG.png" %}" style="max-width: 10rem; margin-top: 2rem;" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Serveur Cloud SIG</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/SIG/Serveur_SIG_Edge.png" %}" style="max-width: 10rem; margin-top: 2rem;" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Serveur Cloud Edge</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/SIG/SIG_PC.png" %}" style="max-width: 10rem; margin-top: 2rem;" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">SIG Pour PC</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/SIG/SIG_Navigateur.png" %}" style="max-width: 10rem; margin-top: 2rem;" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">SIG pour le navigateur</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/SIG/SIG_Mobile.png" %}" style="max-width: 10rem; margin-top: 2rem;" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">SIG pour mobile</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/SIG/Plateforme_SIG_ligne.png" %}" style="max-width: 10rem; margin-top: 2rem;" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Plateforme SIG en ligne</p>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
 
   </body>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https:/code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https:/unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https:/ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https:/stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
