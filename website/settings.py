@@ -14,10 +14,10 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-GDAL_LIBRARY_PATH = os.path.join(BASE_DIR,'GDAL/gdal304')
-GEOS_LIBRARY_PATH = os.path.join(BASE_DIR,'GDAL/geos_c')
+GDAL_LIBRARY_PATH = os.path.join(BASE_DIR,'GDAL\gdal304')
+GEOS_LIBRARY_PATH = os.path.join(BASE_DIR,'GDAL\geos_c')
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
-STATIC_DIR = os.path.join(BASE_DIR,'reporter/static')
+STATIC_DIR = os.path.join(BASE_DIR,'reporter\static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -122,10 +122,10 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [
-    STATIC_DIR,
-]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATICFILES_DIRS = [
+#     STATIC_DIR,
+# ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR,
 

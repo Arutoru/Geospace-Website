@@ -47,7 +47,7 @@
         <ul class="nav nav-items nav-pills">
           <div class="dropdown">
             <a class="btn dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nous découvrir
+                Nos produits
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="{% url 'photogrammetrie' %}">PHOTOGRAMMETRIE</a>
@@ -64,11 +64,12 @@
 
     <!-- Intro du thème -->
     <div class="theme bathymetrie" style="height: 600px;">
-      <h3>Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
+      <h3>Retrouvez tout l'équipement de bathymétrie pour effectuer des levés de haute précision des fonds marins.</h3>
     </div>
 
     <!-- Liste des produits -->
     <div id="accordion">
+
       <!-- Section 1 -->
       <div class="card">
         <!-- Titre -->
@@ -84,31 +85,146 @@
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
             <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/USV/usv-apache-6-chcnav-multibeam-bathymetric-hydrographic-survey.png" %}" alt="Card image cap">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#usv1" src="{% static "Images/Produit/Bathymetrie/USV/usv-apache-6-chcnav-multibeam-bathymetric-hydrographic-survey.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
                 <p class="text-center my-auto card-text">Apache6 USV</p>
-                <small class="text-center my-auto card-text">USV with Norbit multibeam echosounder</small>
+                <small class=" card-text">USV with Norbit multibeam echosounder</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="usv1" tabindex="-1" role="dialog" aria-labelledby="usvLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="usvLabel1">Apache6 USV</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Carousel d'images -->
+                  <div class="modal-body">
+                    <div id="carouselIndicators1" class="carousel slide">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselIndicators1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicators1" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100 mouseZoom"  src="{% static "Images/Produit/Bathymetrie/USV/usv-apache-6-chcnav-multibeam-bathymetric-hydrographic-survey.png" %}" alt="Card image cap">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 mouseZoom" src="{% static "Images/Produit/photogrammetrie/Drones/R.png" %}" alt="Card image cap">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Description du produit -->
+                  <div class="container">
+                    <p class="text-justify">USV with Norbit multibeam echosounder.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
             <!-- Produit 2 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
+            <div class="card mx-auto my-4" data-toggle="modal" data-target="#usv2" style="width: 18rem;">
               <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/USV/Apache-4-USV-single-beam-supports-ADCPs-CHCNAV.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
                 <p class="text-center my-auto card-text">Apache4 USV</p>
-                <small class="text-center my-auto card-text">USV with integrated ADCP and echosounder</small>
+                <small class=" card-text">USV with integrated ADCP and echosounder</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="usv2" tabindex="-1" role="dialog" aria-labelledby="usvLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="usvLabel2">Apache6 USV</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Carousel d'images -->
+                  <div class="modal-body">
+                    <div id="carouselIndicators1" class="carousel slide">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselIndicators1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicators1" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100 mouseZoom"  src="{% static "Images/Produit/Bathymetrie/USV/Apache-4-USV-single-beam-supports-ADCPs-CHCNAV.png" %}" alt="Card image cap">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 mouseZoom" src="{% static "Images/Produit/photogrammetrie/Drones/R.png" %}" alt="Card image cap">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Description du produit -->
+                  <div class="container">
+                    <p class="text-justify">USV with integrated ADCP and echosounder.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 3 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
+            <div class="card mx-auto my-4" data-toggle="modal" data-target="#usv3" style="width: 18rem;">
               <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/USV/apache-3-usv-gnss-imu-single-bim-marine-drone-chcnav.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
                 <p class="text-center my-auto card-text">Apache3 USV</p>
-                <small class="text-center my-auto card-text">Single beam marine drone</small>
+                <small class=" card-text">Single beam marine drone</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="usv3" tabindex="-1" role="dialog" aria-labelledby="usvLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="usvLabel3">Apache6 USV</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Carousel d'images -->
+                  <div class="modal-body">
+                    <div id="carouselIndicators1" class="carousel slide">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselIndicators1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicators1" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100 mouseZoom"  src="{% static "Images/Produit/Bathymetrie/USV/apache-3-usv-gnss-imu-single-bim-marine-drone-chcnav.png" %}" alt="Card image cap">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 mouseZoom" src="{% static "Images/Produit/photogrammetrie/Drones/R.png" %}" alt="Card image cap">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Description du produit -->
+                  <div class="container">
+                    <p class="text-justify">Single beam marine drone.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -118,20 +234,412 @@
         <!-- Titre -->
         <div class="card-header" id="headingTwo">
           <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              ANTENNES SMART GNSS
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#antenneS1" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i90-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i90 IMU-RTK GNSS</p>
+                <small class=" card-text">High-performance IMU-RTK GNSS receiver</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="antenneS1" tabindex="-1" role="dialog" aria-labelledby="antenneSLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneSLabel1">i90 IMU-RTK GNSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i90-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">High-performance IMU-RTK GNSS receiver.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin"  data-toggle="modal" data-target="#antenneS2" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i90-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i90 PRO IMU-RTK GNSS</p>
+                <small class=" card-text">Professional IMU-RTK GNSS receiver with L-Band</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 2 -->
+            <div class="modal fade" id="antenneS2" tabindex="-1" role="dialog" aria-labelledby="antenneSLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneSLabel2">i90 PRO IMU-RTK GNSSi90 IMU-RTK GNSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i90-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">Professional IMU-RTK GNSS receiver with L-Band.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#antenneS3" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i83-smart-versatile-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i83 IMU-RTK GNSS</p>
+                <small class=" card-text">Universal smart IMU-RTK GNSS receiver</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 3 -->
+            <div class="modal fade" id="antenneS3" tabindex="-1" role="dialog" aria-labelledby="antenneSLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneSLabel3">i83 IMU-RTK GNSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="decalRightZoom" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i83-smart-versatile-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">Universal smart IMU-RTK GNSS receiver.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#antenneS4" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i73+-imu-rtk-uhf-base-rover-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i73+ IMU-RTK GNSS</p>
+                <small class=" card-text">Compact GNSS/IMU Base + Rover</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 4 -->
+            <div class="modal fade" id="antenneS4" tabindex="-1" role="dialog" aria-labelledby="antenneSLabel4" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneSLabel4">i73+ IMU-RTK GNSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="decalRightZoom" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i73+-imu-rtk-uhf-base-rover-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">Compact GNSS/IMU Base + Rover.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#antenneS5" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/Ibase-gnss-rtk-base-station-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">iBase GNSS</p>
+                <small class=" card-text">Rugged & cable-free GNSS base station</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 5 -->
+            <div class="modal fade" id="antenneS5" tabindex="-1" role="dialog" aria-labelledby="antenneSLabel5" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneSLabel5">iBase GNSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="decalRightZoom" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/Ibase-gnss-rtk-base-station-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">Rugged & cable-free GNSS base station.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#antenneS6" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i50-gnss-gps-glonass-galileo-beidou-qzss-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">i50 GNSS</p>
+                <small class=" card-text">Cost-effective GNSS receiver</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 6 -->
+            <div class="modal fade" id="antenneS6" tabindex="-1" role="dialog" aria-labelledby="antenneSLabel6" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneSLabel6">i50 GNSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="decalRightZoom" src="{% static "Images/Produit/Bathymetrie/GNSS_Smart_Antennas/i50-gnss-gps-glonass-galileo-beidou-qzss-receiver-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">Cost-effective GNSS receiver.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingThree">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ANTENNES GNSS
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne1" src="{% static "Images/Produit/Topographie/GNSS_Antennas/1.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">C220GR2</p>
+                <small class=" card-text">Geodetic GNSS choke-ring antenna</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="antenne1" tabindex="-1" role="dialog" aria-labelledby="antenneLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel1">i50 GNSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/1.png" %}" alt="Card image cap">
+                    <p class=" card-text">Cost-effective GNSS receiver.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne2" src="{% static "Images/Produit/Topographie/GNSS_Antennas/3.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AT312</p>
+                <small class=" card-text">GNSS antenna for surveying</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 2 -->
+            <div class="modal fade" id="antenne2" tabindex="-1" role="dialog" aria-labelledby="antenneLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel2">i50 GNSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/3.png" %}" alt="Card image cap">
+                    <p class=" card-text">Cost-effective GNSS receiver.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingFour">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              SENSEURS GNSS
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/Bathymetrie/GNSS_Sensors/cgi-610-gnss-ins-sensor-chc-navigation.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CGI-610</p>
+                <small class=" card-text">GNSS+INS positionning and navigation sensor</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/GNSS_Sensors/P2-elite-gnss-sensor-dual-antenna-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P2 ELITE GNSS</p>
+                <small class=" card-text">Advanced sensor for positionning + heading</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/GNSS_Sensors/p2-gnss-sensor-receiver-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P2 PRO GNSS</p>
+                <small class=" card-text">Rugged positionning + heading sensor</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/GNSS_Sensors/p-2-pro-gnss-dual-antenna-sensor-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P2 GNSS</p>
+                <small class=" card-text">Robust and versatile positionningsensor</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/GNSS_Sensors/P5E.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P5 GNSS</p>
+                <small class=" card-text">Geodetic reference station for GNSS Network applications</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/GNSS_Sensors/p5-gnss-reference-station-624-channels-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">P5E GNSS</p>
+                <small class=" card-text">Reference station for geodetic & scientific applications</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingFive">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              CONTROLLEURS TABLETTES
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Controllers_Tablets/lt-700-h-gnss-rtk-tablet-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">LT700H RTK Tablet</p>
+                <small class=" card-text">Rugged Android Tablet with cm GNSS positionning</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/Bathymetrie/Controllers_Tablets/hce600-data-controller-surveying-mapping-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">HCE600</p>
+                <small class=" card-text">Rugged 5.5" HD+ Field data controller</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Controllers_Tablets/lt-700-gnss-forestry-field-survey-tablet-chc-navigation.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">LT700 Tablet</p>
+                <small class=" card-text">Professional Android Tablet for mobile workforce</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingSix">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
               SENSEURS HYDROGRAPHIQUES
             </button>
           </h2>
         </div>
         <!-- produits -->
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
             <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
               <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Hydrographic_Sensors/Product_banner_D390.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
                 <p class="text-center my-auto card-text">D390</p>
-                <small class="text-center my-auto card-text">Integrated single beam echo sounder system</small>
+                <small class=" card-text">Integrated single beam echo sounder system</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
@@ -140,7 +648,7 @@
               <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Hydrographic_Sensors/AUTO.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
                 <p class="text-center my-auto card-text">HydroSurvey Software</p>
-                <small class="text-center my-auto card-text">Software for hydrographicdata collection, processing and export</small>
+                <small class=" card-text">Software for hydrographicdata collection, processing and export</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
@@ -149,7 +657,60 @@
               <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Hydrographic_Sensors/D230.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
                 <p class="text-center my-auto card-text">D230</p>
-                <small class="text-center my-auto card-text">Single beam echo sounder for bathymetric survey</small>
+                <small class=" card-text">Single beam echo sounder for bathymetric survey</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingSeven">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              LOGICIELS
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Software/landstar-8-surveying-mapping-app-chc-navigation.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">LandStar 8</p>
+                <small class=" card-text">Land Surveying and Mapping APP</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Bathymetrie/Software/cgo-2-post-processing-software-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CGO2 Postr processing Software</p>
+                <small class=" card-text">GNSS data post-processing software</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" src="{% static "Images/Produit/Bathymetrie/Software/CPS2.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CPS GNSS Network</p>
+                <small class=" card-text">GNSS RTK network management software</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" src="{% static "Images/Produit/Bathymetrie/Software/GNSSTool.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">GNSS Tool</p>
+                <small class=" card-text">GNSS and NMEA output App</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
@@ -166,3 +727,4 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{% static 'js/web.js' %}"></script>

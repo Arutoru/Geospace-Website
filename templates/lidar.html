@@ -47,7 +47,7 @@
         <ul class="nav nav-items nav-pills">
           <div class="dropdown">
             <a class="btn dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nous découvrir
+                Nos produits
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="{% url 'photogrammetrie' %}">PHOTOGRAMMETRIE</a>
@@ -63,7 +63,7 @@
 
     <!-- Intro du thème -->
     <div class="theme lidar" style="height: 600px;">
-      <h3>Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
+      <h3>Expérimentez la lasergrammétrie comme jamais auparavant à l'aide des capteurs LIDAR les plus performants.</h3>
     </div>
 
     <!-- Liste des produits -->
@@ -73,8 +73,8 @@
         <!-- Titre -->
         <div class="card-header" id="headingOne">
           <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              PLATEFORMES UAV
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              MOBILE MAPPERS
             </button>
           </h2>
         </div>
@@ -84,33 +84,346 @@
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
             <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top" src="{% static "Images/Produit/Lidar/UAV_platform/p330-pro-vtol-uav-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top decalmax" data-toggle="modal" data-target="#mobilemapper1" src="{% static "Images/Produit/Lidar/Mobile_Mappers/alphaair450-lidar-system-chc-navigation.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">P330 PRO</p>
-                <small class="text-center my-auto card-text">VTOL drone for surveying and mapping</small>
+                <p class="text-center my-auto card-text">AlphaAir 450</p>
+                <small class=" card-text">Airbone LiDAR system with 3D Scanner, camera, IMU & GNSS</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="mobilemapper1" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel1">AlphaAir 450</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalRightZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/alphaair450-lidar-system-chc-navigation.png" %}" alt="Card image cap">
+                    <p class=" card-text">Airbone LiDAR system with 3D Scanner, camera, IMU & GNSS</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 2 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top" src="{% static "Images/Produit/Lidar/UAV_platform/BB4.png" %}" alt="Card image cap">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#mobilemapper2" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AlphaAir-1400-laser-scanner-chcnav.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">BB4</p>
-                <small class="text-center my-auto card-text">Unmanned Air Vehicle (UAV) for airbone surveys </small>
+                <p class="text-center my-auto card-text">AlphaAir 1400</p>
+                <small class=" card-text">Airbone reality capture LiDAR system with 1430m range</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 2 -->
+            <div class="modal fade" id="mobilemapper2" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel2">AlphaAir 1400</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AlphaAir-1400-laser-scanner-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">Airbone reality capture LiDAR system with 1430m range</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#mobilemapper3" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AlphaAir-2400-laser-scanner-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AlphaAir 2400</p>
+                <small class=" card-text">Airbone reality capture LiDAR system with 2150m range</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 3 -->
+            <div class="modal fade" id="mobilemapper3" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel3">AlphaAir 2400</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top " src="{% static "Images/Produit/Lidar/Mobile_Mappers/AlphaAir-2400-laser-scanner-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">Airbone reality capture LiDAR system with 2150m range</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#mobilemapper4" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Alpha-3d-laser-scanner-mapping-chcnav.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Alpha3D</p>
+                <small class=" card-text">Advanced system: laser scanner, HDR camera, GNSS, inertial tech</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 4 -->
+            <div class="modal fade" id="mobilemapper4" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel4" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel4">Alpha3D</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalRightZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Alpha-3d-laser-scanner-mapping-chcnav.png" %}" alt="Card image cap">
+                    <p class=" card-text">Advanced system: laser scanner, HDR camera, GNSS, inertial tech</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#mobilemapper5" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AU300_product.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AlphaAir 300</p>
+                <small class=" card-text">Accurate LiDAR with minVUX UAV family scanners onboard</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 5 -->
+            <div class="modal fade" id="mobilemapper5" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel5" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel5">AlphaAir 300</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalRightZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AU300_product.png" %}" alt="Card image cap">
+                    <p class=" card-text">Accurate LiDAR with minVUX UAV family scanners onboard</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" data-toggle="modal" data-target="#mobilemapper6" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AU900_1300.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">AlphaUni 900/1300</p>
+                <small class=" card-text">High-end, Long-range LiDAR solutions, multi-platform setup</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 6 -->
+            <div class="modal fade" id="mobilemapper6" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel6" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel6">AlphaUni 900/1300</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalRightZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AU900_1300.png" %}" alt="Card image cap">
+                    <p class=" card-text">High-end, Long-range LiDAR solutions, multi-platform setup</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 7 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#mobilemapper7" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Leica-RTC360-Thumbnail-800x428_OLD.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Scanner Laser 3D Leica RTC360</p>
+                <small class=" card-text">Solution de capture de la réalité 3D rapide, agile et précise</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 7 -->
+            <div class="modal fade" id="mobilemapper7" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel7" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel7">AlphaUni 900/1300</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalLeftZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Leica-RTC360-Thumbnail-800x428_OLD.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Solution de capture de la réalité 3D rapide, agile et précise</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 8 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#mobilemapper8" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Leica_ScanStation_P30_P40_pic_800x428_new.JPG" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica ScanStation P50</p>
+                <small class=" card-text">Le scanner laser 3D à longue portée le plus rapide et le plus sûr.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 8 -->
+            <div class="modal fade" id="mobilemapper8" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel8" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel8">Leica ScanStation P50</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalLeftZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Leica_ScanStation_P30_P40_pic_800x428_new.JPG" %}" alt="Card image cap">
+                    <p class=" card-text">Le scanner laser 3D à longue portée le plus rapide et le plus sûr.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 9 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#mobilemapper9" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Leica_ScanStation_P30_P40_pic_800x428.JPG" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica ScanStation P30/P40</p>
+                <small class=" card-text">Scanner laser 3D polyvalent ultrarapide.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 9 -->
+            <div class="modal fade" id="mobilemapper9" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel9" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel9">Leica ScanStation P30/P40</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalLeftZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Leica_ScanStation_P30_P40_pic_800x428.JPG" %}" alt="Card image cap">
+                    <p class=" card-text">Scanner laser 3D polyvalent ultrarapide.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 10 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#mobilemapper10" src="{% static "Images/Produit/Lidar/Mobile_Mappers/BLK360_Prieview_Thumb_latest.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica BLK360</p>
+                <small class=" card-text">Le scanner laser d'imagerie le plus petit et le plus facile à utiliser au monde.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 10 -->
+            <div class="modal fade" id="mobilemapper10" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel10" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel10">Leica BLK360</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalLeftZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/BLK360_Prieview_Thumb_latest.png" %}" alt="Card image cap">
+                    <p class=" card-text">Le scanner laser d'imagerie le plus petit et le plus facile à utiliser au monde.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 11 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#mobilemapper11" src="{% static "Images/Produit/Lidar/Mobile_Mappers/LGSBLK2GO.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica BLK360</p>
+                <small class=" card-text">Portable, sans fil et léger, conçu pour une capture rapide de la réalité en mouvement.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 11 -->
+            <div class="modal fade" id="mobilemapper11" tabindex="-1" role="dialog" aria-labelledby="mobilemapperLabel11" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="mobilemapperLabel11">Leica BLK360</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top decalLeftZoom" src="{% static "Images/Produit/Lidar/Mobile_Mappers/LGSBLK2GO.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Portable, sans fil et léger, conçu pour une capture rapide de la réalité en mouvement.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
+
 
       <!-- Section 2 -->
       <div class="card">
         <!-- Titre -->
         <div class="card-header" id="headingTwo">
           <h2 class="text-center mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-              MOBILE MAPPERS
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+              LOGICIELS
             </button>
           </h2>
         </div>
@@ -120,86 +433,34 @@
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
             <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmax" src="{% static "Images/Produit/Lidar/Mobile_Mappers/alphaair450-lidar-system-chc-navigation.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">AlphaAir 450</p>
-                <small class="text-center my-auto card-text">Airbone LiDAR system with 3D Scanner, camera, IMU & GNSS</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-            <!-- Produit 2 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AlphaAir-1400-laser-scanner-chcnav.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">AlphaAir 1400</p>
-                <small class="text-center my-auto card-text">Airbone reality capture LiDAR system with 1430m range</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-            <!-- Produit 3 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AlphaAir-2400-laser-scanner-chcnav.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">AlphaAir 2400</p>
-                <small class="text-center my-auto card-text">Airbone reality capture LiDAR system with 2150m range</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-            <!-- Produit 4 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Mobile_Mappers/Alpha-3d-laser-scanner-mapping-chcnav.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">Alpha3D</p>
-                <small class="text-center my-auto card-text">Advanced system: laser scanner, HDR camera, GNSS, inertial tech</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-            <!-- Produit 5 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AU300_product.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">AlphaAir 300</p>
-                <small class="text-center my-auto card-text">Accurate LiDAR with minVUX UAV family scanners onboard</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-            <!-- Produit 6 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmax" src="{% static "Images/Produit/Lidar/Mobile_Mappers/AU900_1300.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">AlphaUni 900/1300</p>
-                <small class="text-center my-auto card-text">High-end, Long-range LiDAR solutions, multi-platform setup</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Section 3 -->
-      <div class="card">
-        <!-- Titre -->
-        <div class="card-header" id="headingThree">
-          <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              LOGICIELS
-            </button>
-          </h2>
-        </div>
-
-        <!-- produits -->
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body mx-auto d-flex flex-row flex-wrap">
-            <!-- Produit 1 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Lidar/Software/copre-lidar-data-processing-software-chc-navigation.png" %}" alt="Card image cap">
+              <img class="product-img-top decalmin" data-toggle="modal" data-target="#software1" src="{% static "Images/Produit/Lidar/Software/copre-lidar-data-processing-software-chc-navigation.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
                 <p class="text-center my-auto card-text">CoPre LiDAR Processing Software</p>
-                <small class="text-center my-auto card-text">Processing of LiDAR scanner data</small>
+                <small class=" card-text">Processing of LiDAR scanner data</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="software1" tabindex="-1" role="dialog" aria-labelledby="softwareLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="softwareLabel1">Leica BLK360</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="product-img-top " src="{% static "Images/Produit/Lidar/Software/copre-lidar-data-processing-software-chc-navigation.png" %}" alt="Card image cap">
+                    <p class=" card-text">Portable, sans fil et léger, conçu pour une capture rapide de la réalité en mouvement.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

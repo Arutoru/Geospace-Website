@@ -8,6 +8,25 @@ nav div a.navbar-brand{
   font-family: var(--Livvic);
   margin-top: 7px;
 }
+ /* Définition du navbar pour le rendre statique */
+#navbar {
+  background-color: white;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #26A3D1;
+}
+/* Rendre le navbar statique */
+nav.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+/* Création d'un padding pour éviter le chevauchement du navbar et du titre du topic */
+section .topic{
+  padding-top: 65px;
+}
+
 /* Variable globales */
 :root{
   --sky: linear-gradient(120deg, #095f7f 0%, #10b8f7 100%);
@@ -49,7 +68,7 @@ section div div div.carousel-item{
   width: 100%; height: 100%;
 }
 section div div div.carousel-inner .one {
-  background: url(../Images/Services/Photogrammétrie.jpg);
+  background: url(../Images/Services/Photogrammetrie.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -59,7 +78,7 @@ section div div div.carousel-inner .two {
   background-position: center;
 }
 section div div div.carousel-inner .three {
-  background: url(../Images/Services/Bathymétrie.jpg);
+  background: url(../Images/Services/Bathymetrie.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -75,12 +94,18 @@ section div div div.carousel-inner .five {
 }
 
 /* Gamme de produit */
+/* Définition du margin pour que le topic produit couvre tout l'écran */
+section div div div div.product{
+  margin-bottom: 50px !important;
+}
+/* Propriété de l'image de topic */
 section div div div div img.product-img{
   border-style: solid;
   border-width: 2px;
   border-color: #0090c4;
   max-width: 150px;
 }
+/* Propriété du texte de topic */
 section div div div div.product-text{
   background: var(--sky);
 }
@@ -95,10 +120,16 @@ section div div div .card{
 section div div div div img.card-img-top{
   width: 100%;
   transition: 1s ease;
+  cursor: pointer;
 }
 section div div div div img.card-img-top:hover {
   transform: scale(1.2);
 }
+
+/* Contacts */
+.blue div address h5{
+  font-size: 1.2rem;
+  }
 
 /* Version PC only*/
 @media (min-width: 768px){
@@ -124,6 +155,10 @@ section div div.about div p {
 }
 /* Version Tablette */
 @media (max-width: 767.98px){
+/* Définition du margin pour que le topic produit couvre tout l'écran */
+section div div div div.product{
+  margin-bottom: 40px !important;
+}
 /* Effacer les éléments de la navbar */
 .nav .nav-items .nav-item{
     display:none;
@@ -145,7 +180,7 @@ section div .space{
 section div div div div div.product-text h5, h6, p, a{
   font-size: 0.8rem;
   }
-.blue div div h5{
+.blue div address h5{
   font-size: 1rem;
   }
 footer h4{

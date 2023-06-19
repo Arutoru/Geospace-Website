@@ -48,7 +48,7 @@
         <ul class="nav nav-items nav-pills">
           <div class="dropdown">
             <a class="btn dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nous découvrir
+                Nos produits
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="{% url 'photogrammetrie' %}">PHOTOGRAMMETRIE</a>
@@ -64,7 +64,7 @@
 
     <!-- Intro du thème -->
     <div class="theme topographie" style="height: 600px;">
-      <h3>Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
+      <h3>Une large gamme d'appareils topographiques, allant des stations totales robotisées aux antennes GNSS intelligentes.</h3>
     </div>
 
     <!-- Liste des produits -->
@@ -74,8 +74,8 @@
         <!-- Titre -->
         <div class="card-header" id="headingOne">
           <h2 class="text-center mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              ANTENNES SMART GNSS
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" .........aria-expanded="false" aria-controls="collapseOne">
+              STATIONS TOTALES MANUELLES
             </button>
           </h2>
         </div>
@@ -84,60 +84,95 @@
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
             <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i90-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#STM1" src="{% static "Images/Produit/Topographie/Station_Totale/Leica-FlexLine-TS10-Web-Portlet-800x428.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">i90 IMU-RTK GNSS</p>
-                <small class="text-center my-auto card-text">High-performance IMU-RTK GNSS receiver</small>
+                <p class="text-center my-auto card-text">Leica FlexLine TS10</p>
+                <small class=" card-text">Station totale manuelle la plus avancée pour les applications de haute précision</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="STM1" tabindex="-1" role="dialog" aria-labelledby="STMLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="STMLabel1">Leica FlexLine TS10</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Station_Totale/Leica-FlexLine-TS10-Web-Portlet-800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Station totale manuelle la plus avancée pour les applications de haute précision.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 2 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i90-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#STM2" src="{% static "Images/Produit/Topographie/Station_Totale/Leica-FlexLine-TS07-Web-Portlet-800x428.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">i90 PRO IMU-RTK GNSS</p>
-                <small class="text-center my-auto card-text">Professional IMU-RTK GNSS receiver with L-Band</small>
+                <p class="text-center my-auto card-text">Leica FlexLine TS07</p>
+                <small class=" card-text">Station totale manuelle pour des applications de mesure de moyenne à haute précision</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 2 -->
+            <div class="modal fade" id="STM2" tabindex="-1" role="dialog" aria-labelledby="STMLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="STMLabel2">Leica FlexLine TS07</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Station_Totale/Leica-FlexLine-TS07-Web-Portlet-800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Station totale manuelle pour des applications de mesure de moyenne à haute précision.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 3 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i83-smart-versatile-imu-rtk-gnss-receiver-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#STM3" src="{% static "Images/Produit/Topographie/Station_Totale/Leica-FlexLine-TS03-Web-Portlet-800x428.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">i83 IMU-RTK GNSS</p>
-                <small class="text-center my-auto card-text">Universal smart IMU-RTK GNSS receiver</small>
+                <p class="text-center my-auto card-text">Leica FlexLine TS03</p>
+                <small class=" card-text">Station totale manuelle pour des applications standards de mesure</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
-            <!-- Produit 4 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i73+-imu-rtk-uhf-base-rover-chcnav.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">i73+ IMU-RTK GNSS</p>
-                <small class="text-center my-auto card-text">Compact GNSS/IMU Base + Rover</small>
+            <!-- Details produit 3 -->
+            <div class="modal fade" id="STM3" tabindex="-1" role="dialog" aria-labelledby="STMLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="STMLabel3">Leica FlexLine TS03</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Station_Totale/Leica-FlexLine-TS03-Web-Portlet-800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Station totale manuelle pour des applications standards de mesure.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
               </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
-            <!-- Produit 5 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/Ibase-gnss-rtk-base-station-chcnav.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">iBase GNSS</p>
-                <small class="text-center my-auto card-text">Rugged & cable-free GNSS base station</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-            <!-- Produit 6 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Smart_Antennas/i50-gnss-gps-glonass-galileo-beidou-qzss-receiver-chcnav.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">i50 GNSS</p>
-                <small class="text-center my-auto card-text">Cost-effective GNSS receiver</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-          </div>
 
+          </div>
         </div>
       </div>
 
@@ -147,7 +182,7 @@
         <div class="card-header" id="headingTwo">
           <h2 class="text-center mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              SENSEURS GNSS
+              STATIONS TOTALES ROBOTISEES
             </button>
           </h2>
         </div>
@@ -156,60 +191,133 @@
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
             <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/cgi-610-gnss-ins-sensor-chc-navigation.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#STR1" src="{% static "Images/Produit/Topographie/Station_Totale_Robotisee/Leica_TS16_Web Portlet 800x428.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">CGI-610</p>
-                <small class="text-center my-auto card-text">GNSS+INS positionning and navigation sensor</small>
+                <p class="text-center my-auto card-text">Leica TS16</p>
+                <small class="card-text"><b>Station totale robotisée équipée d'AutoHeight</b> <br>
+                Station totale topographique autonome pour toutes les conditions, équipée de la fonction AutoHeight (mesure automatique de la hauteur d'instrument)</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="STR1" tabindex="-1" role="dialog" aria-labelledby="STRLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="STMLabel1">Leica TS16</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Station_Totale_Robotisee/Leica_TS16_Web Portlet 800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text"><b>Station totale robotisée équipée d'AutoHeight</b> <br>
+                    Station totale topographique autonome pour toutes les conditions, équipée de la fonction AutoHeight (mesure automatique de la hauteur d'instrument)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 2 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/P2-elite-gnss-sensor-dual-antenna-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#STR2" src="{% static "Images/Produit/Topographie/Station_Totale_Robotisee/Leica_TS13_-_Thumbnail_-_800x428.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">P2 ELITE GNSS</p>
-                <small class="text-center my-auto card-text">Advanced sensor for positionning + heading</small>
+                <p class="text-center my-auto card-text">Leica TS13</p>
+                <small class="card-text"><b>Station totale robotisée milieu de gamme</b><br>
+                Alliant efficacité, fiabilité et évolutivité pour toutes les applications topographiques</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 2 -->
+            <div class="modal fade" id="STR2" tabindex="-1" role="dialog" aria-labelledby="STRLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="STMLabel2">Leica TS13</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Station_Totale_Robotisee/Leica_TS13_-_Thumbnail_-_800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text"><b>Station totale robotisée milieu de gamme</b><br>
+                    Alliant efficacité, fiabilité et évolutivité pour toutes les applications topographiques</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 3 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/p2-gnss-sensor-receiver-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#STR3" src="{% static "Images/Produit/Topographie/Station_Totale_Robotisee/Leica_TS60_pic_800x428.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">P2 PRO GNSS</p>
-                <small class="text-center my-auto card-text">Rugged positionning + heading sensor</small>
+                <p class="text-center my-auto card-text">Leica Nova TS60</p>
+                <small class=" card-text"><b>Station totale la plus précise au monde</b><br>
+                Précision maximale et performances avancées pour des applications topographiques dans tous les secteurs</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 3 -->
+            <div class="modal fade" id="STR3" tabindex="-1" role="dialog" aria-labelledby="STRLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="STMLabel3">Leica Nova TS60</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Station_Totale_Robotisee/Leica_TS60_pic_800x428.png" %}" alt="Card image cap">
+                    <p class=" card-text"><b>Station totale la plus précise au monde</b><br>
+                    Précision maximale et performances avancées pour des applications topographiques dans tous les secteurs</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 4 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/p-2-pro-gnss-dual-antenna-sensor-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#STR4" src="{% static "Images/Produit/Topographie/Station_Totale_Robotisee/Leica_Nova_TM60_Web_Portlet_800x428.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">P2 GNSS</p>
-                <small class="text-center my-auto card-text">Robust and versatile positionningsensor</small>
+                <p class="text-center my-auto card-text">Leica Nova TM60</p>
+                <small class=" card-text"><b>Station totale de surveillance</b><br>
+                Conçue pour la surveillance automatisée et manuelle des déformations</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
-            <!-- Produit 5 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/P5E.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">P5 GNSS</p>
-                <small class="text-center my-auto card-text">Geodetic reference station for GNSS Network applications</small>
+            <!-- Details produit 4 -->
+            <div class="modal fade" id="STR4" tabindex="-1" role="dialog" aria-labelledby="STRLabel4" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="STMLabel4">Leica Nova TM60</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Station_Totale_Robotisee/Leica_Nova_TM60_Web_Portlet_800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text"><b>Station totale la plus précise au monde</b><br>
+                    Précision maximale et performances avancées pour des applications topographiques dans tous les secteurs</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
               </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
-            <!-- Produit 6 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/GNSS_Sensors/p5-gnss-reference-station-624-channels-chcnav.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">P5E GNSS</p>
-                <small class="text-center my-auto card-text">Reference station for geodetic & scientific applications</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-          </div>
 
+          </div>
         </div>
       </div>
 
@@ -219,7 +327,7 @@
         <div class="card-header" id="headingThree">
           <h2 class="text-center mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              CONTROLLEURS TABLETTES
+              ANTENNES GNSS
             </button>
           </h2>
         </div>
@@ -228,31 +336,245 @@
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
             <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Controllers_Tablets/lt-700-h-gnss-rtk-tablet-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne1" src="{% static "Images/Produit/Topographie/GNSS_Antennas/LGS_GS18I_thumbnail.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">LT700H RTK Tablet</p>
-                <small class="text-center my-auto card-text">Rugged Android Tablet with cm GNSS positionning</small>
+                <p class="text-center my-auto card-text">Leica GS18 I</p>
+                <small class="card-text">Rapide, agile et précis. LA solution de capture 3D pour les professionnels travaillant sur des projets complexes nécessitant des représentations 3D précises et fiables quelques soient les conditions sur site.</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="antenne1" tabindex="-1" role="dialog" aria-labelledby="antenneLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel1">Leica Nova TM60</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/LGS_GS18I_thumbnail.jpg" %}" alt="Card image cap">
+                    <p class=" card-text"><b>Station totale la plus précise au monde</b><br>
+                    Précision maximale et performances avancées pour des applications topographiques dans tous les secteurs</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 2 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmax" src="{% static "Images/Produit/Topographie/Controllers_Tablets/hce600-data-controller-surveying-mapping-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne2" src="{% static "Images/Produit/Topographie/GNSS_Antennas/LGS-GS18-T-Thumbnail-800x428.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">HCE600</p>
-                <small class="text-center my-auto card-text">Rugged 5.5" HD+ Field data controller</small>
+                <p class="text-center my-auto card-text">Leica GS18 T</p>
+                <small class="card-text">Rapide, agile et précis. LA solution de capture 3D pour les professionnels travaillant sur des projets complexes nécessitant des représentations 3D précises et fiables quelques soient les conditions sur site.</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="antenne2" tabindex="-1" role="dialog" aria-labelledby="antenneLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel2">Leica Nova TM60</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/LGS-GS18-T-Thumbnail-800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Rapide, agile et précis. LA solution de capture 3D pour les professionnels travaillant sur des projets complexes nécessitant des représentations 3D précises et fiables quelques soient les conditions sur site.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 3 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Controllers_Tablets/lt-700-gnss-forestry-field-survey-tablet-chc-navigation.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne3" src="{% static "Images/Produit/Topographie/GNSS_Antennas/WebsiteCaroselTemplate800x428No3.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">LT700 Tablet</p>
-                <small class="text-center my-auto card-text">Professional Android Tablet for mobile workforce</small>
+                <p class="text-center my-auto card-text">Leica GS18</p>
+                <small class=" card-text">L'antenne intelligente GS18 qui évolue avec votre activité : transformez-la à tout moment en un mobile capable de compenser l'inclinaison.</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 3 -->
+            <div class="modal fade" id="antenne3" tabindex="-1" role="dialog" aria-labelledby="antenneLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel3">Leica Nova TM60</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/WebsiteCaroselTemplate800x428No3.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">L'antenne intelligente GS18 qui évolue avec votre activité : transformez-la à tout moment en un mobile capable de compenser l'inclinaison.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne4" src="{% static "Images/Produit/Topographie/GNSS_Antennas/Leica_Viva_GS16_GNSS_smart_antenna_800x428.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica Viva GS16</p>
+                <small class=" card-text">Antenne intelligente GNSS légère pour un positionnement précis.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 4 -->
+            <div class="modal fade" id="antenne4" tabindex="-1" role="dialog" aria-labelledby="antenneLabel4" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel4">Leica Viva GS16</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/Leica_Viva_GS16_GNSS_smart_antenna_800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Antenne intelligente GNSS légère pour un positionnement précis.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne5" src="{% static "Images/Produit/Topographie/GNSS_Antennas/Leica_Viva_GS10_GS25_pic_800x428_new.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica Viva GS10 et GS25</p>
+                <small class=" card-text">Récepteur GNSS polyvalent de haute performance.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 5 -->
+            <div class="modal fade" id="antenne5" tabindex="-1" role="dialog" aria-labelledby="antenneLabel5" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel5">Leica Viva GS10 et GS25</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/Leica_Viva_GS10_GS25_pic_800x428_new.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Récepteur GNSS polyvalent de haute performance.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne6" src="{% static "Images/Produit/Topographie/GNSS_Antennas/LeicaGS07Antenna1581200x800.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica GS07</p>
+                <small class=" card-text">Notre antenne légère la plus compacte à ce jour.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 6 -->
+            <div class="modal fade" id="antenne6" tabindex="-1" role="dialog" aria-labelledby="antenneLabel6" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel6">Leica GS07</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/LeicaGS07Antenna1581200x800.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Notre antenne légère la plus compacte à ce jour.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 7 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne7" src="{% static "Images/Produit/Topographie/GNSS_Antennas/Leica_GM30_monitoring_GNSS_receiver_800x428.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica GM30</p>
+                <small class=" card-text">Capteur GNSS d'auscultation tout-en-un.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 7 -->
+            <div class="modal fade" id="antenne7" tabindex="-1" role="dialog" aria-labelledby="antenneLabel7" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel7">Leica GM30</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/Leica_GM30_monitoring_GNSS_receiver_800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Capteur GNSS d'auscultation tout-en-un.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 8 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#antenne8" src="{% static "Images/Produit/Topographie/GNSS_Antennas/Leica_GMX910_GNSS_Smart_Antenna_800x428.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica GMX910</p>
+                <small class=" card-text">Instrument GNSS avec antenne intégrée pour l'auscultation.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 7 -->
+            <div class="modal fade" id="antenne8" tabindex="-1" role="dialog" aria-labelledby="antenneLabel8" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="antenneLabel8">Leica GMX910</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/GNSS_Antennas/Leica_GMX910_GNSS_Smart_Antenna_800x428.png" %}" alt="Card image cap">
+                    <p class=" card-text">Instrument GNSS avec antenne intégrée pour l'auscultation.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -263,21 +585,134 @@
         <div class="card-header" id="headingFour">
           <h2 class="text-center mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              STATION TOTALE
+              SYSTEMES ET CAPTEURS
             </button>
           </h2>
         </div>
         <!-- Produits -->
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Station_Totale/total-station-cts-112-r4-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#systeme1" src="{% static "Images/Produit/Topographie/System/Leica_Viva_SmartPole_pic_800x428_new.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">CTS-112R4</p>
-                <small class="text-center my-auto card-text">Total Station for construction and surveying</small>
+                <p class="text-center my-auto card-text">Leica SmartPole</p>
+                <small class="card-text">Une totale liberté pour basculer du mode GNSS au mode TPS en toute simplicité.</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="systeme1" tabindex="-1" role="dialog" aria-labelledby="systemeLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="systemeLabel1">Leica SmartPole</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/System/Leica_Viva_SmartPole_pic_800x428_new.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Une totale liberté pour basculer du mode GNSS au mode TPS en toute simplicité.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#systeme2" src="{% static "Images/Produit/Topographie/System/Leica_Viva_SmartStation_pic_800x428_new.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica SmartStation</p>
+                <small class="card-text">Déterminer facilement la position de la station totale grâce au GPS.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 2 -->
+            <div class="modal fade" id="systeme2" tabindex="-1" role="dialog" aria-labelledby="systemeLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="systemeLabel2">Leica SmartStation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/System/Leica_Viva_SmartStation_pic_800x428_new.png" %}" alt="Card image cap">
+                    <p class=" card-text">Déterminer facilement la position de la station totale grâce au GPS.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#systeme3" src="{% static "Images/Produit/Topographie/System/ComBox60_FrontView_800x428_Thumbnail.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica M-Com</p>
+                <small class=" card-text">Solutions de communication pour les systèmes d'auscultations permanentes</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 3 -->
+            <div class="modal fade" id="systeme3" tabindex="-1" role="dialog" aria-labelledby="systemeLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="systemeLabel3">Leica M-Com</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/System/ComBox60_FrontView_800x428_Thumbnail.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Solutions de communication pour les systèmes d'auscultations permanentes.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" data-toggle="modal" data-target="#systeme4" src="{% static "Images/Produit/Topographie/System/Smart-Gateway_800x428_Thumbnail.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Capteurs géotechniques</p>
+                <small class=" card-text">Mesure automatisée par capteurs géotechniques connectés et acquisition de données</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Details produit 4 -->
+            <div class="modal fade" id="systeme4" tabindex="-1" role="dialog" aria-labelledby="systemeLabel4" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="systemeLabel4">Capteurs géotechniques</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/System/Smart-Gateway_800x428_Thumbnail.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Mesure automatisée par capteurs géotechniques connectés et acquisition de données.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -288,7 +723,7 @@
         <div class="card-header" id="headingFive">
           <h2 class="text-center mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              LOGICIELS
+              CARNETS DE TERRAIN
             </button>
           </h2>
         </div>
@@ -297,39 +732,137 @@
           <div class="card-body mx-auto d-flex flex-row flex-wrap">
             <!-- Produit 1 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Software/landstar-8-surveying-mapping-app-chc-navigation.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#carnet1" src="{% static "Images/Produit/Topographie/Controlleurs/Leica_CS35_pic_800x428.png" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">LandStar 8</p>
-                <small class="text-center my-auto card-text">Land Surveying and Mapping APP</small>
+                <p class="text-center my-auto card-text">Leica CS35</p>
+                <small class="card-text">Tablette de terrain fine, robuste et puissante, avec un grand écran de 10".</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 1 -->
+            <div class="modal fade" id="carnet1" tabindex="-1" role="dialog" aria-labelledby="carnetLabel1" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="carnetLabel1">Leica CS35</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Controlleurs/Leica_CS35_pic_800x428.png" %}" alt="Card image cap">
+                    <p class=" card-text">Tablette de terrain fine, robuste et puissante, avec un grand écran de 10".</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 2 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/cgo-2-post-processing-software-chcnav.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#carnet2" src="{% static "Images/Produit/Topographie/Controlleurs/LGS-CS30-KV-800x428.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">CGO2 Postr processing Software</p>
-                <small class="text-center my-auto card-text">GNSS data post-processing software</small>
+                <p class="text-center my-auto card-text">Tablette Leica CS30</p>
+                <small class=" card-text">Tablette de terrain polyvalente et résistante conçu pour les relevés avec écran 7".</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
+            <!-- Details produit 2 -->
+            <div class="modal fade" id="carnet2" tabindex="-1" role="dialog" aria-labelledby="carnetLabel2" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="carnetLabel2">Tablette Leica CS30</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Controlleurs/LGS-CS30-KV-800x428.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Tablette de terrain polyvalente et résistante conçu pour les relevés avec écran 7".</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Produit 3 -->
             <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmax" src="{% static "Images/Produit/Topographie/Software/CPS2.png" %}" alt="Card image cap">
+              <img class="product-img-top" data-toggle="modal" data-target="#carnet3" src="{% static "Images/Produit/Topographie/Controlleurs/leica_cs20_controller_pic_800x428_new2.jpg" %}" alt="Card image cap">
               <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">CPS GNSS Network</p>
-                <small class="text-center my-auto card-text">GNSS RTK network management software</small>
+                <p class="text-center my-auto card-text">Leica CS20</p>
+                <small class="card-text">Carnet de terrain robuste et ergonomique, avec un grand écran de 5".</small>
               </div>
               <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
-            <!-- Produit 4 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top decalmin" src="{% static "Images/Produit/Topographie/Software/GNSSTool.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">GNSS Tool</p>
-                <small class="text-center my-auto card-text">GNSS and NMEA output App</small>
+            <!-- Details produit 3 -->
+            <div class="modal fade" id="carnet3" tabindex="-1" role="dialog" aria-labelledby="carnetLabel3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="carnetLabel3">Leica CS20</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="" src="{% static "Images/Produit/Topographie/Controlleurs/leica_cs20_controller_pic_800x428_new2.jpg" %}" alt="Card image cap">
+                    <p class=" card-text">Carnet de terrain robuste et ergonomique, avec un grand écran de 5".</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
               </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Section 6 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingSix">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSeven">
+              DATALINK
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+          <div class="card mx-auto my-4" style="width: 18rem;">
+            <img class="product-img-top"  data-toggle="modal" data-target="#datalink" src="{% static "Images/Produit/Topographie/DataLink/DL8_product.png" %}" alt="Card image cap">
+            <div class="card-body mx-auto">
+              <p class="text-center my-auto card-text">DL8 Datalink</p>
+              <small class=" card-text">Rugged powerful reliable advanced datalink for GNSS application</small>
+            </div>
+            <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+          </div>
+          <!-- Details produit -->
+          <div class="modal fade" id="datalink" tabindex="-1" role="dialog" aria-labelledby="datalinkLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-justify" id="datalinkLabel">DL8 Datalink</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="" src="{% static "Images/Produit/Topographie/DataLink/DL8_product.png" %}" alt="Card image cap">
+                  <p class=" card-text">Rugged powerful reliable advanced datalink for GNSS application</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -338,61 +871,84 @@
       <!-- Section 6 -->
       <div class="card">
         <!-- Titre -->
-        <div class="card-header" id="headingSix">
-          <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              ANTENNES GNSS
-            </button>
-          </h2>
-        </div>
-        <!-- Produits -->
-        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-          <div class="card-body mx-auto d-flex flex-row flex-wrap">
-            <!-- Produit 1 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top" src="{% static "Images/Produit/Topographie/GNSS_Antennas/1.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">C220GR2</p>
-                <small class="text-center my-auto card-text">Geodetic GNSS choke-ring antenna</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-            <!-- Produit 2 -->
-            <div class="card mx-auto my-4" style="width: 18rem;">
-              <img class="product-img-top" src="{% static "Images/Produit/Topographie/GNSS_Antennas/3.png" %}" alt="Card image cap">
-              <div class="card-body mx-auto">
-                <p class="text-center my-auto card-text">AT312</p>
-                <small class="text-center my-auto card-text">GNSS antenna for surveying</small>
-              </div>
-              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Section 7 -->
-      <div class="card">
-        <!-- Titre -->
         <div class="card-header" id="headingSeven">
           <h2 class="text-center mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              DATALINK
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSix">
+              LOGICIELS
             </button>
           </h2>
         </div>
         <!-- Produits -->
         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-          <div class="card mx-auto my-4" style="width: 18rem;">
-            <img class="product-img-top" src="{% static "Images/Produit/Topographie/DataLink/DL8_product.png" %}" alt="Card image cap">
-            <div class="card-body mx-auto">
-              <p class="text-center my-auto card-text">DL8 Datalink</p>
-              <small class="text-center my-auto card-text">Rugged powerful reliable advanced datalink for GNSS application</small>
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit 1 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/Leica-Captivate-Main-KV-Sensors-800x428px.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica Captivate</p>
+                <small class="card-text">Logiciel 3D immersif de terrain pour la saisie et la gestion de vos données.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
             </div>
-            <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            <!-- Produit 2 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/Leica_Infinity_pic_web_800x428.gif" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica Infinity</p>
+                <small class="card-text">Leica Infinity est un logiciel de topographie intuitif conçu pour gérer, traiter, analyser et contrôler la qualité de toutes les données de mesure des relevés sur le terrain.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 3 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/lgs_geomos_kv1_800x428.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica GeoMoS</p>
+                <small class=" card-text">Solution flexible et automatique pour la surveillance de déformations.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 4 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/Leica_GeoMoS_Now_pic_800x428_new2.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica GeoMoS Now!</p>
+                <small class=" card-text">Analysez et visualisez les données de surveillance de n’importe où.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 5 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/Leica_GeoMoS-Adjustment_pic_800x428_new.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica GeoMoS Adjustment</p>
+                <small class="card-text">Ajustement automatique et analyse de déformations pour l'auscultation.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 6 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/Leica_SmartWorx_pic_web_800x428_new2.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">Leica SmartWorx Viva</p>
+                <small class="card-text">Logiciel de terrain pour toutes les applications.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+            <!-- Produit 7 -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top" src="{% static "Images/Produit/Topographie/Software/LISCAD Thumbnail image.jpg" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">LISCAD</p>
+                <small class=" card-text">Logiciels de topographie et de génie civil pour le traitement de vos données du terrain jusqu'au rendu de plans finalisés.</small>
+              </div>
+              <button type="button" class="mb-2 mx-auto btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i></button>
+            </div>
+
           </div>
         </div>
       </div>
+
 
     </div>
 
