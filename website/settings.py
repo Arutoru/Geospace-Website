@@ -13,13 +13,13 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 # LINUX
-GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/gdal/osgeo/lib/libgdal.so"))
-GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/geos/pygeos/lib.cpython-39-x86_64-linux-gnu.so"))
+# GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/gdal/osgeo/lib/libgdal.so"))
+# GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/geos/pygeos/lib.cpython-39-x86_64-linux-gnu.so"))
 # WINDOWS
-# GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/gdal304"))
-# GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/geos_c"))
+GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/gdal304"))
+GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/geos_c"))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR = os.path.join(BASE_DIR,'presentation\static')
 
