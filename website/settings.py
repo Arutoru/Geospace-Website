@@ -20,8 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # WINDOWS
 GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/gdal304"))
 GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/geos_c"))
-TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
-STATIC_DIR = os.path.join(BASE_DIR,'presentation\static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -64,7 +62,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
