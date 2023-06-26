@@ -21,7 +21,7 @@ GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/geos/pygeos/lib.cpyth
 # GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/gdal304"))
 # GEOS_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_WINDOWS/geos_c"))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
-STATIC_DIR = os.path.join(BASE_DIR,'reporter\static')
+STATIC_DIR = os.path.join(BASE_DIR,'presentation\static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
