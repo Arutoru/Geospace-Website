@@ -473,27 +473,27 @@
     <footer>
       <div class="d-flex flex-column flex-md-row justify-content-between">
         <div class="col-md-4 col-xl-3 d-flex flex-wrap justify-content-center justify-content-md-start">
-          <a class="btn btn-link" href="#Produits">Produits</a>
-          <a class="btn btn-link" href="#Realisations">Réalisations</a>
-          <a class="btn btn-link" href="#Partenaires">Partenaires</a>
-          <a class="btn btn-link" href="#Apropos">A propos</a>
-          <a class="btn btn-link" href="#Contact">Contacts</a>
+          <a class = "btn btn-link" href="{% url 'photogrammetrie' %}">Photogrammétrie</a>
+          <a class = "btn btn-link" href="{% url 'topographie' %}">Topographie</a>
+          <a class = "btn btn-link" href="{% url 'bathymetrie' %}">Bathymétrie</a>
+          <a class = "btn btn-link" href="{% url 'sig' %}">SIG/Cartographie</a>
+          <a class = "btn btn-link" href="{% url 'lidar' %}">lasergrammétrie</a>
         </div>
         <div class="col-md-8 col-xl-9">
           <h4 class="text-center">Ils nous font confiance</h4>
           <div class="my-2 d-flex flex-wrap justify-content-around">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
-            <img class="my-1"style="max-width: 50px;"  src="{% static "Img1.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/Leica.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/Socapalm.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/Eneo.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/Dibombari.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/Maetur.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/PAD.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/SCDP.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/Razel.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/Satom.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/minhdu.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/mindef.jpg" %}" alt="Card image cap">
+            <img class="my-1"style="max-width: 50px;"  src="{% static "Images/Partenaires/mintp.jpg" %}" alt="Card image cap">
           </div>
         </div>
       </div>
@@ -523,24 +523,4 @@
     $('.carousel').carousel({
       interval: 4000
     })
-
-    // Blocage du navbar
-
-    // // Get the navbar
-    // var navbar = document.getElementById("navbar");
-    // console.log(navbar);
-    //
-    // $(window).scroll(function (event) {
-    //     // A chaque fois que l'utilisateur va scroller (descendre la page)
-    //     var y = $(this).scrollTop(); // On récupérer la valeur du scroll vertical
-    //     console.log(y);
-    //
-    //     //si cette valeur > à 200 on ajouter la class
-    //     if (y >= 20) {
-    //       navbar.classList.add('sticky');
-    //     } else {
-    //       // sinon, on l'enlève
-    //       navbar.classList.remove('sticky');
-    //     }
-    //   });
   </script>

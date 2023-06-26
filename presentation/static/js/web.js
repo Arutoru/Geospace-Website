@@ -1,3 +1,4 @@
+// Zoomer sur le produit en fonction du déplacement de la souris 
 var products = document.getElementsByClassName("mouseZoom");
 var images = document.getElementsByClassName("product-img-top")
 
