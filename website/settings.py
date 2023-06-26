@@ -15,6 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = BASE_DIR / 'presentation' / 'static'
+TEMPLATE_DIR = str(os.path.join(BASE_DIR,'templates'))
 
 # LINUX
 GDAL_LIBRARY_PATH = str(os.path.join(BASE_DIR, "GDAL_LINUX/gdal/osgeo/lib/libgdal.so"))
@@ -65,7 +66,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
