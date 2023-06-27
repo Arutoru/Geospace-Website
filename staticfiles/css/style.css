@@ -60,12 +60,16 @@ section div div div h2{
   font-family: var(--Lexend);
 }
 /* Background carousel */
+section div div .carousel{
+  overflow: hidden;
+}
 section div div div.carousel-inner {
   z-index: -99;
 }
 section div div div.carousel-item{
   position: fixed;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
 }
 section div div div.carousel-inner .one {
   background: url(../Images/Services/Photogrammetrie.jpg);
@@ -91,6 +95,7 @@ section div div div.carousel-inner .five {
   background: url(../Images/Services/Lidar.jpg);
   background-size: cover;
   background-position: center;
+
 }
 
 /* Gamme de produit */
