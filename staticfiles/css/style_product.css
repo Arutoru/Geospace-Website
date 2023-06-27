@@ -14,6 +14,17 @@ nav div img{
   --Livvic: "Livvic" cursive;
 }
 
+/* Rendre le footer statique */
+footer{
+  position: fixed;
+  bottom: 0px;
+  z-index: -99;
+}
+
+#accordion{
+  padding-bottom: 110px;
+}
+
 /* Police générale des éléments de navigation */
 .blue .produit, .nav > a, .dropdown a{
   position: relative;
