@@ -14,14 +14,6 @@ nav div img{
   --Livvic: "Livvic" cursive;
 }
 
-/* Définition du footer */
-footer{
-  position:fixed;
-  bottom: 30px;
-  width: 100%;
-  z-index: -99;
-}
-
 /* Police générale des éléments de navigation */
 .blue .produit, .nav > a, .dropdown a{
   position: relative;
@@ -164,6 +156,17 @@ nav div a.navbar-brand{
 .collapse .modal .modal-dialog .modal-content .modal-body .carousel li{
   background-color: #0C89DD;
   opacity: 50%;
+}
+
+/* Définition du footer */
+footer{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -99;
+}
+#accordion{
+  margin-bottom: 15vh;
 }
 
 /* Version PC only*/
