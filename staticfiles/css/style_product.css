@@ -14,9 +14,10 @@ nav div img{
   --Livvic: "Livvic" cursive;
 }
 
-/* Rendre le footer statique */
+/* Définition du footer */
 footer{
   width: 100%;
+  z-index: -99;
 }
 
 #accordion{

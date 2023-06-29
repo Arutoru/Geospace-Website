@@ -14,16 +14,14 @@ nav div img{
   --Livvic: "Livvic" cursive;
 }
 
-/* Rendre le footer statique */
+/* Définition du footer */
 footer{
-  position: fixed;
-  bottom: 0px;
+  width: 100%;
   z-index: -99;
-  width: auto;
 }
 
 #accordion{
-  padding-bottom: 110px;
+  margin-bottom: 20vh;
 }
 
 /* Police générale des éléments de navigation */
