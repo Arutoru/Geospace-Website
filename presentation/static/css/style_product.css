@@ -16,14 +16,10 @@ nav div img{
 
 /* Définition du footer */
 footer{
-  position: fixed;
-  bottom: 0px;
+  position:fixed;
+  bottom: 25px;
   width: 100%;
   z-index: -99;
-}
-
-#accordion{
-  margin-bottom: 15vh;
 }
 
 /* Police générale des éléments de navigation */
