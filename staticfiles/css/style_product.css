@@ -18,12 +18,12 @@ nav div img{
 footer{
   position: fixed;
   bottom: 0px;
-  z-index: -99;
   width: 100%;
+  z-index: -99;
 }
 
 #accordion{
-  padding-bottom: 15vh;
+  margin-bottom: 15vh;
 }
 
 /* Police générale des éléments de navigation */
