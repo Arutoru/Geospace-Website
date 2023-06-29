@@ -16,6 +16,8 @@ nav div img{
 
 /* Définition du footer */
 footer{
+  position: fixed;
+  bottom: 0px;
   width: 100%;
   z-index: -99;
 }
