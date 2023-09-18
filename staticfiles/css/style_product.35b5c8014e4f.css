@@ -1,0 +1,349 @@
+@import url("../css/font.fabe636bb730.css");
+/* Logo */
+nav div img{
+  height: 50px;
+}
+
+/* Variable globales */
+:root{
+  --sky: linear-gradient(120deg, #095f7f 0%, #10b8f7 100%);
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic" cursive;
+}
+
+/* Police générale des éléments de navigation */
+.blue .produit, .nav > a, .dropdown a{
+  position: relative;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: var(--Abel);
+}
+/* Police du nom de l'entreprise */
+nav div a.navbar-brand{
+  font-size: 1.1em;
+  font-family: var(--Livvic);
+  margin-top: 7px;
+  }
+/* Couleur des textes de la navigation */
+.blue .produit a{
+  color: var(--white);
+}
+
+/* barre de Navigation */
+.blue{
+  background: var(--sky);
+  padding-top: 5px;
+}
+/* thème de Produit actif de la barre de navigation dans un fond blanc */
+.blue .active, #navbar{
+  background-color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.blue .active a, .nav > a, .dropdown a{
+  color: #0271AE;
+}
+.nav .nav-items .nav-link a{
+  color: white;
+}
+/* Pour créer une marge bleue au dessus du produit actif */
+.produit{
+  padding: 10px;
+}
+
+/* Titre de la Gamme de produit*/
+.card-header{
+  background: var(--sky);
+}
+.card-header h2 button{
+  color: white;
+  font-size: 0.8em;
+  font-family: var(--Lexend);
+}
+.card-header h2 button.collapsed, .card-header h2 button:not(.collapsed){
+  color: white;
+  text-decoration: none;
+}
+
+/* Background pour chaque thème de produit */
+.photogrammetrie{
+  background: url("../Images/Services/Photogrammetrie.9ab41b19e806.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+.topographie{
+  background: url("../Images/Services/Topographie.44ff8743a373.jpg");
+  background-size: 100% 130%;
+  background-position: center;
+}
+.bathymetrie{
+  background: url("../Images/Services/Bathymetrie.f2c6c6d219d9.jpg");
+  background-size: 100% 170%;
+  background-position: center;
+}
+.sig{
+  background: url("../Images/Services/SIG.f2537982be26.jpg");
+  background-size: 100% 130%;
+  background-position: center;
+}
+.lidar{
+  background: url("../Images/Services/Lidar.1c24d25a2cea.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+/* Texte du thème du produit */
+.theme h3{
+  position: relative;
+  text-shadow: 2px 2px 4px #000000;
+  width: 400px;
+  margin-left: 150px;
+  top: 100px;
+  color: white;
+}
+
+
+/* Nom du produit */
+.collapse .card-body .card div p{
+  font-size: 1.5em;
+  font-family: var(--Abel);
+}
+/* Taille image */
+.collapse .card img{
+  min-height : 200px;
+  cursor: pointer;
+}
+/* Description */
+.collapse .card-body .card div{
+  text-align: justify;
+}
+/* Ajuster les images des produits */
+.collapse .card-body .card{
+  overflow: hidden;
+}
+.collapse .card-body .card .decalmin{
+  position: relative;
+  left: 20px;
+}
+.collapse .card-body .card .decalmax{
+  position: relative;
+  left: 50px;
+}
+
+
+/* Affichage des images des produits en grand format */
+.collapse .modal .modal-dialog .modal-content .modal-body img{
+  max-width: 650px;
+  min-height: 500px;
+}
+/* Masquer la partie de l'image zoomée qui sort du cadre */
+.collapse .modal .modal-dialog .modal-content .modal-body{
+  overflow: hidden;
+}
+
+/* Ajustement de zoom pour grande image */
+.collapse .modal .modal-dialog .modal-content .modal-body .mouseZoom{
+  position: relative;
+  left: 10px;
+  transition: 0.8s ease;
+}
+.collapse .modal .modal-dialog .modal-content .modal-body .mouseZoom:hover{
+  transform: scale(1.3);
+}
+/* Couleur des signets du carousel */
+.collapse .modal .modal-dialog .modal-content .modal-body .carousel li{
+  background-color: #0C89DD;
+  opacity: 50%;
+}
+
+/* Définition du footer */
+footer{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -99;
+}
+#accordion{
+  margin-bottom: 60vh;
+}
+
+/* Version PC only*/
+@media (min-width: 768px){
+/* Retirer les thèmes de produits */
+#navbar{
+    display:none;
+  }
+/* Pour éviter le chevauchement entre les images et les titres des projets */
+section div div div .card .card-img{
+  padding-bottom: 5px;
+}
+/* A propos */
+section div div.about {
+    background: var(--sky);
+  }
+section div .team {
+    background: url("../Images/Equipes.1c2fbaa1e3b5.jpg");
+    background-size: cover;
+  }
+section div div.about div p {
+    color: white;
+  }
+
+/* Affichage de la boite modale */
+.collapse .modal .modal-dialog .modal-content{
+    width: 700px;
+    position: relative;
+    right: 100px;
+  }
+/* Taille maximale de l'image */
+.collapse .modal .modal-dialog .modal-content .modal-body img{
+    max-width: 700px;
+    min-height: 500px;
+  }
+/* Décalage des images zoomées */
+.collapse .modal .modal-dialog .modal-content .modal-body .decalLeftZoom{
+  position: relative;
+  right: 70px;
+  }
+/* Décalage des images zoomées */
+.collapse .modal .modal-dialog .modal-content .modal-body .decalRightZoom{
+  position: relative;
+  left: 75px;
+  }
+}
+
+/* Version Tablette */
+@media (max-width: 767.98px){
+/* Texte d'intro */
+.blue .produit{
+    display:none;
+  }px;
+.blue .produit{
+  position: relative;
+  font-weight: bold;
+  font-size: 0.8em;
+  font-family: var(--Abel);
+  }
+/* Background pour chaque produit */
+.theme{
+  background-size: cover;
+}
+/* Background intro */
+.theme h3{
+  width: 350px;
+  margin-left: 35px;
+  top: 50px;
+  font-size: 1.5em;
+}
+/* Pour éviter le chevauchement entre les images et les titres des projets */
+section div div div .card .card-img{
+    padding-bottom: 15px;
+  }
+/* A propos */
+section div div.about {
+    background-color: white;
+  }
+section div div.about div p {
+    color: black;
+  }
+/*Titre du Produit */
+.card-header h2 button{
+  font-size: 0.7em;
+  }
+/* Décalage des images zoomées */
+.collapse .modal .modal-dialog .modal-content .modal-body .decalLeftZoom{
+  position: relative;
+  right: 50px;
+  }
+/* Décalage des images zoomées */
+.collapse .modal .modal-dialog .modal-content .modal-body .decalRightZoom{
+  position: relative;
+  left: 45px;
+  }
+}
+
+/* Version mini-tablette */
+@media (max-width: 575.98px){
+/* Edition du nom de l'entreprise */
+nav div a.navbar-brand{
+  font-size: 0.8rem;
+  font-family: var(--Livvic);
+  margin-top: 7px;
+  }
+/* Background pour chaque thème de produit */
+.photogrammetrie{
+  background: url("../Images/Services/PhotogrammetrieM.fbb36e6594c8.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  }
+/* Effacer le nom de l'entreprise */
+nav div a.navbar-brand{
+  display: none;
+  }
+/* Changer la taille du texte d'intro */
+.theme h3{
+  font-size: 1.2em;
+  }
+/*Titre de la gamme de produit */
+.card-header h2 button{
+  font-size: 0.5em;
+  }
+/*Nom du Produit */
+.collapse .card-body .card div p{
+  font-size: 1.2em;
+  }
+/* Taille de l'image */
+.collapse .card-body .card img{
+  min-height : 100px;
+  }
+/* Affichage des images des produits en grand format */
+.collapse .modal .modal-dialog .modal-content .modal-body img{
+  max-width: 450px;
+  min-height: 400px;
+  }
+/* Décalage des images zoomées */
+.collapse .modal .modal-dialog .modal-content .modal-body .decalLeftZoom{
+  position: relative;
+  right: 40px;
+  }
+/* Décalage des images zoomées */
+.collapse .modal .modal-dialog .modal-content .modal-body .decalRightZoom{
+  position: relative;
+  left: 30px;
+  }
+}
+
+/* Version mobile  */
+@media (max-width: 369.98px){
+/* Titre intro */
+.theme h3{
+  width: 200px;
+  margin-left: 15px;
+  top: 50px;
+  font-size: 1.2em;
+}
+/*Titre du Produit */
+.card-header h2 button{
+  font-size: 0.4em;
+  font-weight: bold;
+  }
+/*Nom du Produit */
+.collapse .card div p{
+  font-size: 1em;
+  }
+/* Fiche technique */
+.collapse .card button span:first-child{
+  display: none;
+  }
+/* Affichage des images des produits en grand format */
+.collapse .modal .modal-dialog .modal-content .modal-body img{
+    max-width: 350px;
+    min-height: 300px;
+  }
+/* Pas d'affichage de taille à cette dimension*/
+.collapse .card img{
+  pointer-events: none;
+  }
+}

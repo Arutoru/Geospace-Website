@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 {% load static %}
+{% load leaflet_tags %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    {% leaflet_js %}
+    {% leaflet_css %}
     <!-- Load static css -->
     <link rel="stylesheet" href="{% static "css/style_product.css" %}"/>
     <link rel="icon" type="image/x-icon" href="{% static "Img1.jpg" %}">
@@ -952,6 +955,33 @@
     </div>
 
     <footer>
+      <div class="blue" id="Contact">
+        <div class="title">
+          <h2 class="text-center" style="color: white;">CONTACTS</h2>
+          <hr style="border-width: 2px;">
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-center">
+          <div class="col-md-7 container" id="map" style="max-width: 600px;">
+            <h4 class="text-center" style="color: white;">Localisation</h4>
+            {% leaflet_map "detailmap" callback="window.map_init"%}
+          </div>
+          <address class="col-md-5 mt-5 d-flex flex-column justify-content-between">
+            <h5 style="color: white;">Adresse: Boulevard de la liberté - Direction générale Orange</h5>
+            <h5 style="color: white;">B.P. 4474 Douala – Cameroun</h5>
+            <h5 style="color: white;">E-mail: <a href="mailto:geospaceafrica2012@gmail.com" style="color: white;">geospaceafrica2012@gmail.com</a></h5>
+            <h5 style="color: white;">Tél: +237 670 28 01 01 / 655 97 37 67</h5>
+            <div class="d-flex flex-row">
+              <h5 style="color: white;">Suivez-nous sur: &nbsp;</h5>
+              <a class="mx-2" href="https://www.facebook.com/geospaceafrica" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+              <a class="mx-2" href="https://www.linkedin.com/company/geospace-africa-ltd/about/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+              <a class="mx-2" href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </div>
+          </address>
+        </div>
+        <br>
+      </div>
+
       <div class="d-flex flex-column flex-md-row justify-content-between">
         <div class="col-md-4 col-xl-3 d-flex flex-wrap justify-content-center justify-content-md-start">
           <a class = "btn btn-link" href="{% url 'photogrammetrie' %}">Photogrammétrie</a>
