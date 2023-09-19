@@ -14,15 +14,3 @@ for (let i=0, c=images.length; i<c; i++){
     });
   }, false);
 };
-
-// Définition de la localisation
-window.addEventListener("map:init", function (event){
-  var map = event.detail.map;
-  L.marker([4.055745,9.698625]).addTo(map)
-    .bindPopup('Geospace Africa Ltd');
-});
-
-// Intervalle de transition carousel
-$('.carousel').carousel({
-  interval: 4000
-})
