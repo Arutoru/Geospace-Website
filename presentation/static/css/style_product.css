@@ -160,14 +160,15 @@ nav div a.navbar-brand{
 
 /* Définition du footer */
 footer{
-  position:fixed;
+  z-index: -99;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: -99;
 }
 #accordion{
   margin-bottom: 60vh;
 }
+
 
 /* Version PC only*/
 @media (min-width: 768px){
@@ -261,6 +262,14 @@ section div div.about div p {
 .collapse .modal .modal-dialog .modal-content .modal-body .decalRightZoom{
   position: relative;
   left: 45px;
+  }
+  /* Définition du footer */
+footer{
+    position: static;
+    z-index: 1;
+  }
+#accordion{
+  margin-bottom: 0vh;
   }
 }
 
