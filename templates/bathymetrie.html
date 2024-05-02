@@ -1001,6 +1001,7 @@
         </div>
       </div>
 
+
       <!-- Section 6 -->
       <div class="card">
         <!-- Titre -->
@@ -1089,6 +1090,59 @@
       </div>
 
       <!-- Section 7 -->
+      <div class="card">
+        <!-- Titre -->
+        <div class="card-header" id="headingSeven">
+          <h2 class="text-center mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFour">
+              DATALINK
+            </button>
+          </h2>
+        </div>
+        <!-- Produits -->
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+          <div class="card-body mx-auto d-flex flex-row flex-wrap">
+            <!-- Produit -->
+            <div class="card mx-auto my-4" style="width: 18rem;">
+              <img class="product-img-top decalmax" data-toggle="modal" data-target="#datalink" src="{% static "Images/Produit/Bathymetrie/Datalink/DL8_product.png" %}" alt="Card image cap">
+              <div class="card-body mx-auto">
+                <p class="text-center my-auto card-text">CGI-610</p>
+                <small class=" card-text">GNSS+INS positionning and navigation sensor</small>
+              </div>
+              <a href="{% static "Images/Produit/Bathymetrie/Datalink/DL8_DS_EN.pdf" %}" attributes-list class="mb-2 mx-auto" target="_blank">
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i>
+                </button>
+              </a>
+            </div>
+            <!-- Details produit -->
+            <div class="modal fade" id="datalink" tabindex="-1" role="dialog" aria-labelledby="datalinklabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-justify" id="datalink">CGI-610</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="decalRightZoom" src="{% static "Images/Produit/Bathymetrie/Datalink/DL8_product.png" %}" alt="Card image cap">
+                    <p class=" card-text">TIGHLY COUPLED HIGH-PERFORMANCE GNSS/INS SYSTEM.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="{% static "Images/Produit/Bathymetrie/Datalink/DL8_DS_EN.pdf" %}" attributes-list target="_blank">
+                      <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Voir la fiche texhnique"><span>Voir la fiche tehnique </span><i class="fa fa-eye" aria-hidden="true"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 8 -->
       <div class="card">
         <!-- Titre -->
         <div class="card-header" id="headingSeven">
